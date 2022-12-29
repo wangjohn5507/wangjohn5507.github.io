@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning | Chung-Yu Wang</title>
+    <link>https://wangjohn5507.github.io/tag/deep-learning/</link>
+      <atom:link href="https://wangjohn5507.github.io/tag/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Deep Learning</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 10 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://wangjohn5507.github.io/media/icon_hu8978b54a26bd2b42bf73ef6018fdbd06_385560_512x512_fill_lanczos_center_3.png</url>
+      <title>Deep Learning</title>
+      <link>https://wangjohn5507.github.io/tag/deep-learning/</link>
+    </image>
+    
+    <item>
+      <title>Pick Up Choose</title>
+      <link>https://wangjohn5507.github.io/project/project3/</link>
+      <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://wangjohn5507.github.io/project/project3/</guid>
+      <description>&lt;p&gt;Continuing previous &lt;a href=&#34;../../publication/conference-paper/&#34;&gt;research&lt;/a&gt;, this project is my graduation project, which used Machine Learning techniques to solve the agricultural workforce scarcity problem that severly affects Taiwan&amp;rsquo;s agriculture industry. My group member and I discovered that the advancement in cities provides more job opportunities and higher salaries that attract young people to move from the countryside to cities. As a result, agricultural labour has gradually decreased in recent years, posing a massive crisis to Taiwan&amp;rsquo;s agricultural industry. Therefore, we focused on the issue of labour shortages when classifying date grades in the harvest season.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
+               /project/project3/grade_huf8e8aca6a77b77ab03cda1f05326e3e2_13066751_3300cfb019705365b75675ad1357a78c.webp 400w,
+               /project/project3/grade_huf8e8aca6a77b77ab03cda1f05326e3e2_13066751_9ef5525cfe28dfdd6aef703010111b35.webp 760w,
+               /project/project3/grade_huf8e8aca6a77b77ab03cda1f05326e3e2_13066751_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://wangjohn5507.github.io/project/project3/grade_huf8e8aca6a77b77ab03cda1f05326e3e2_13066751_3300cfb019705365b75675ad1357a78c.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;258&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;I successfully extracted dates and injured parts from images by training two layers of the YOLOv4 model. Then, I divided dates into different grades with the EfficientNet that was trained with multiple data such as injured area percentage and ingury cause weight.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
+               /project/project3/english-phone_hu6d0acbccfbe9a2dd02265546ddd9f253_147061_f96c618b3dbefcf7f4d4453a6e6bcc27.webp 400w,
+               /project/project3/english-phone_hu6d0acbccfbe9a2dd02265546ddd9f253_147061_533f8d765cefdb3e60cc7b6accdd4b89.webp 760w,
+               /project/project3/english-phone_hu6d0acbccfbe9a2dd02265546ddd9f253_147061_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://wangjohn5507.github.io/project/project3/english-phone_hu6d0acbccfbe9a2dd02265546ddd9f253_147061_f96c618b3dbefcf7f4d4453a6e6bcc27.webp&#34;
+               width=&#34;500&#34;
+               height=&#34;541&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Considering the practical situation, agricultural workers cannot afford expensive equipment. Thus, I used Flutter to design a smartphone application that allows people to use our service conveniently. We presented our result as a domestic conference paper and received many positive feedbacks. Besides, our prominent performance and outstanding work earned us 2&lt;sup&gt;nd&lt;/sup&gt; prize in the Graduation Project Competition.&lt;/p&gt;
+&lt;p&gt;To download the project and know more details about the project, welcome to visit my &lt;a href=&#34;https://github.com/wangjohn5507/pickupchoose&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
