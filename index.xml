@@ -221,6 +221,45 @@ Supplementary notes can be added here, including [code, math, and images](https:
     </item>
     
     <item>
+      <title>Moving soldiers</title>
+      <link>https://wangjohn5507.github.io/project/project4/</link>
+      <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://wangjohn5507.github.io/project/project4/</guid>
+      <description>&lt;p&gt;To familiar with algorithms including DFS, BFS, and UCS, the objective of the project was designing a simple GUI interface and simulated the movement strategy in League of Legends.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
+               /project/project4/move_hu36e86e37c1757a4405f62bfd2d0a4ba9_194599_c9e1b4524f7fd7b14c33b7b9898ef616.webp 400w,
+               /project/project4/move_hu36e86e37c1757a4405f62bfd2d0a4ba9_194599_b02d05511b5b3ac8f48694051a831ff1.webp 760w,
+               /project/project4/move_hu36e86e37c1757a4405f62bfd2d0a4ba9_194599_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://wangjohn5507.github.io/project/project4/move_hu36e86e37c1757a4405f62bfd2d0a4ba9_194599_c9e1b4524f7fd7b14c33b7b9898ef616.webp&#34;
+               width=&#34;494&#34;
+               height=&#34;464&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;By entering different commands, the soldier will move to the destination without colliding with obstacles based on different path searching algorithms. This project totally divided into seven checkpoints to accomplish it.&lt;/p&gt;
+&lt;p&gt;To download the project and know more details about the project, welcome to visit my &lt;a href=&#34;https://github.com/wangjohn5507/OOPII_Project&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Who&#39;s the victim?</title>
       <link>https://wangjohn5507.github.io/project/project1/</link>
       <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
