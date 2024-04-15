@@ -68,6 +68,18 @@ sections:
       # Choose a listing view
       view: card
 
+  # - block: collection
+  #   id: publications
+  #   content:
+  #     title: Recent Publications
+  #     text: 
+  #     filters:
+  #       folders:
+  #         - publication
+  #       exclude_featured: true
+  #   design:
+  #     view: card
+
   # - block: awards
   #   content:
   #     title: Awards
