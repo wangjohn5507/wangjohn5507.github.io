@@ -46,7 +46,7 @@ education:
     date_end: 2025-04-30
     summary: |
       - Supervised by [Professor Hung Viet Pham](https://hvpham.github.io/)
-      - Published 1 paper in MSR 2024.
+      - Published 1 paper in MSR 2024
     # button:
     #   text: 'Read Thesis'
     #   url: 'https://example.com'
@@ -57,7 +57,7 @@ education:
     summary: |
       - GPA: 3.5/4.0
       - A member of the [Computational Biology & Intelligence System Lab](https://cobis.bme.ncku.edu.tw/thyang/Main) supervised by Professor Tzu-Hsien Yang
-      - Published 2 journal papers.
+      - Published 2 journal papers
 
 # work:
 #   - position: Director of Cloud Infrastructure
