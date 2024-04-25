@@ -161,4 +161,4 @@ awards:
   
 ---
 
-I am currently a graduate student of Computer Science (M.Sc) at [York University (YorkU)](https://www.yorku.ca/) in Canada supervised by Professor [Hung Viet Pham](https://hvpham.github.io/). My research interests include but are not limited to Machine Learning, Natural Language Processing, and Software Engineering.
+I am currently a graduate student of Computer Science (M.Sc) at [York University (YorkU)](https://www.yorku.ca/) in Canada supervised by Professor [Hung Viet Pham](https://hvpham.github.io/). My research interests include Machine Learning, Natural Language Processing, and Software Engineering.
