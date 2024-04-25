@@ -56,7 +56,7 @@ education:
     date_end: 2022-06-30
     summary: |
       - GPA: 3.5/4.0
-      - A member of the [Computational Biology & Intelligence System Lab](https://cobis.bme.ncku.edu.tw/thyang/Main) supervised by Professor Tzu-Hsien Yang
+      - A research assistant of the [Computational Biology & Intelligence System Lab](https://cobis.bme.ncku.edu.tw/thyang/Main) supervised by Professor Tzu-Hsien Yang
       - Published 2 journal papers
 
 # work:
