@@ -38,6 +38,7 @@ sections:
       is_education_first: align
 
   - block: awards
+    id: publications
     content:
       title: Publications
       username: admin
