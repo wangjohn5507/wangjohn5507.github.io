@@ -18,7 +18,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download Resume
-        url: uploads/Chung-Yu Wang-Resume.pdf
+        url: uploads/Chung_Yu_Wang_Resume.pdf
     design:
       banner:
         # Upload your cover image to the `assets/media/` folder and reference it here
@@ -36,6 +36,11 @@ sections:
       date_format: 'January 2006'
       # Education or Experience section first?
       is_education_first: align
+
+  - block: awards
+    content:
+      title: Publications
+      username: admin
 
   - block: collection
     id: projects
@@ -80,10 +85,7 @@ sections:
   #   design:
   #     view: card
 
-  # - block: awards
-  #   content:
-  #     title: Awards
-  #     username: admin
+  
 
   # - block: languages
   #   content:

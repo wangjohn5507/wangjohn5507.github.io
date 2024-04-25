@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home | Chung-Yu Wang</title>
-    <link>https://wangjohn5507.github.io/</link>
-      <atom:link href="https://wangjohn5507.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/</link>
+      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <description>Home</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://wangjohn5507.github.io/media/icon_hu9dfd98774236d285c9d9c97365ecb238_49697_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/media/icon_hu9dfd98774236d285c9d9c97365ecb238_49697_512x512_fill_lanczos_center_3.png</url>
       <title>Home</title>
-      <link>https://wangjohn5507.github.io/</link>
+      <link>http://localhost:1313/</link>
     </image>
     
     <item>
       <title>YTLR: Extracting yeast transcription factor-gene associations from the literature using automated literature readers</title>
-      <link>https://wangjohn5507.github.io/publication/journal-article-2/</link>
+      <link>http://localhost:1313/publication/journal-article-2/</link>
       <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://wangjohn5507.github.io/publication/journal-article-2/</guid>
+      <guid>http://localhost:1313/publication/journal-article-2/</guid>
       <description>&lt;!-- 
 
 
@@ -55,9 +55,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>YTLR: Extracting yeast transcription factor-gene associations from the literature using automated literature readers</title>
-      <link>https://wangjohn5507.github.io/publication/journal-article-3/</link>
+      <link>http://localhost:1313/publication/journal-article-3/</link>
       <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://wangjohn5507.github.io/publication/journal-article-3/</guid>
+      <guid>http://localhost:1313/publication/journal-article-3/</guid>
       <description>&lt;!-- 
 
 
@@ -96,9 +96,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>Pick Up Choose</title>
-      <link>https://wangjohn5507.github.io/post/project3/</link>
+      <link>http://localhost:1313/post/project3/</link>
       <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://wangjohn5507.github.io/post/project3/</guid>
+      <guid>http://localhost:1313/post/project3/</guid>
       <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
 &lt;p&gt;Continuing previous &lt;a href=&#34;../../publication/conference-paper/&#34;&gt;research&lt;/a&gt;, this project is my graduation project, which used Machine Learning techniques to solve the agricultural workforce scarcity problem that severly affects Taiwan&amp;rsquo;s agriculture industry. My group member and I discovered that the advancement in cities provides more job opportunities and higher salaries that attract young people to move from the countryside to cities. As a result, agricultural labour has gradually decreased in recent years, posing a massive crisis to Taiwan&amp;rsquo;s agricultural industry. Therefore, we focused on the issue of labour shortages when classifying date grades in the harvest season.&lt;/p&gt;
 &lt;h2 id=&#34;approach&#34;&gt;Approach&lt;/h2&gt;
@@ -126,7 +126,7 @@ Supplementary notes can be added here, including [code, math, and images](https:
                /post/project3/english-phone_hu6d0acbccfbe9a2dd02265546ddd9f253_147061_0d9836790d21da36964503bcdfffba87.webp 400w,
                /post/project3/english-phone_hu6d0acbccfbe9a2dd02265546ddd9f253_147061_dacce709783da303cae60993fa0771f9.webp 760w,
                /post/project3/english-phone_hu6d0acbccfbe9a2dd02265546ddd9f253_147061_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://wangjohn5507.github.io/post/project3/english-phone_hu6d0acbccfbe9a2dd02265546ddd9f253_147061_0d9836790d21da36964503bcdfffba87.webp&#34;
+               src=&#34;http://localhost:1313/post/project3/english-phone_hu6d0acbccfbe9a2dd02265546ddd9f253_147061_0d9836790d21da36964503bcdfffba87.webp&#34;
                width=&#34;500&#34;
                height=&#34;541&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -140,9 +140,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>High-efficiency classification of injured causes on agricultural jujubes using EfficentNet</title>
-      <link>https://wangjohn5507.github.io/publication/conference-paper/</link>
+      <link>http://localhost:1313/publication/conference-paper/</link>
       <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://wangjohn5507.github.io/publication/conference-paper/</guid>
+      <guid>http://localhost:1313/publication/conference-paper/</guid>
       <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
 &lt;p&gt;Due to rapid economic growth, shifts in industry types, and more job opportunities in urban areas, young people born in rural areas are gradually migrating out. Combined with declining fertility rates and an increasing proportion of the elderly population in our society, the aging and even decline of the agricultural labor force has become a concern, making agricultural trancformation more important. In recent years, the development of deep learning in image processing has been applied to agricultural transformation to compensate for the shortage of rural labor. However, the application of this technology is currently limited to high-value export fruits such as mangoes, and relevant research on other undervalued but potentially promising crops is lacking.&lt;/p&gt;
 &lt;p&gt;Based on the EfficientNet deep learning mode, this paper trains a model to identify the cause of damage on jujubes. The experimental data show that the system can successfully identify eight common types of damage on jujubes, and the AUC (Area Under Curve) performance measurement indicator reaches 93.1% on the test set. This research can help non-professionals identify the cause of severe damage that affects quality and classify it for further processing, thereby improving the efficiency and accuracy of workers, reducing the impact of the aging rural population on professional labor, and improving workflows.&lt;/p&gt;
@@ -184,9 +184,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>Human IRES Atlas: an integrative platform for studying IRES-driven translational regulation in humans</title>
-      <link>https://wangjohn5507.github.io/publication/journal-article/</link>
+      <link>http://localhost:1313/publication/journal-article/</link>
       <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://wangjohn5507.github.io/publication/journal-article/</guid>
+      <guid>http://localhost:1313/publication/journal-article/</guid>
       <description>&lt;!-- 
 
 
@@ -225,9 +225,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>Moving soldiers</title>
-      <link>https://wangjohn5507.github.io/post/project2/</link>
+      <link>http://localhost:1313/post/project2/</link>
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://wangjohn5507.github.io/post/project2/</guid>
+      <guid>http://localhost:1313/post/project2/</guid>
       <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
 &lt;p&gt;To familiar with algorithms including DFS, BFS, and UCS, the objective of the project was designing a simple GUI interface and simulated the movement strategy in League of Legends.&lt;/p&gt;
 &lt;p&gt;
@@ -252,7 +252,7 @@ Supplementary notes can be added here, including [code, math, and images](https:
                /post/project2/move_hu36e86e37c1757a4405f62bfd2d0a4ba9_194599_53366a9cb83ac309c67b3a30260bcbc7.webp 400w,
                /post/project2/move_hu36e86e37c1757a4405f62bfd2d0a4ba9_194599_eeea941fe81f66a4da4046e7322c08b3.webp 760w,
                /post/project2/move_hu36e86e37c1757a4405f62bfd2d0a4ba9_194599_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://wangjohn5507.github.io/post/project2/move_hu36e86e37c1757a4405f62bfd2d0a4ba9_194599_53366a9cb83ac309c67b3a30260bcbc7.webp&#34;
+               src=&#34;http://localhost:1313/post/project2/move_hu36e86e37c1757a4405f62bfd2d0a4ba9_194599_53366a9cb83ac309c67b3a30260bcbc7.webp&#34;
                width=&#34;494&#34;
                height=&#34;464&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -267,9 +267,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>Who&#39;s the victim?</title>
-      <link>https://wangjohn5507.github.io/post/project1/</link>
+      <link>http://localhost:1313/post/project1/</link>
       <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://wangjohn5507.github.io/post/project1/</guid>
+      <guid>http://localhost:1313/post/project1/</guid>
       <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
 &lt;p&gt;My group members and I believe that board games should not be limited by their form. Instead, they can show up in a novel way by turning them into computer games. Therefore, from 2020 September to 2020 December, we designed a computer game which concepts were adapted from the board game called &amp;ldquo;Bang!&amp;rdquo;.&lt;/p&gt;
 &lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
@@ -295,7 +295,7 @@ Supplementary notes can be added here, including [code, math, and images](https:
                /post/project1/process_hu62e027757ae918dd529c341073bbc270_151205_a832fe4fc3b516f61ec4cc41b6475f78.webp 400w,
                /post/project1/process_hu62e027757ae918dd529c341073bbc270_151205_e08f5d2e1828055e8cb4913f3568474b.webp 760w,
                /post/project1/process_hu62e027757ae918dd529c341073bbc270_151205_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://wangjohn5507.github.io/post/project1/process_hu62e027757ae918dd529c341073bbc270_151205_a832fe4fc3b516f61ec4cc41b6475f78.webp&#34;
+               src=&#34;http://localhost:1313/post/project1/process_hu62e027757ae918dd529c341073bbc270_151205_a832fe4fc3b516f61ec4cc41b6475f78.webp&#34;
                width=&#34;760&#34;
                height=&#34;477&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;

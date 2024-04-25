@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications | Chung-Yu Wang</title>
-    <link>https://wangjohn5507.github.io/publication/</link>
-      <atom:link href="https://wangjohn5507.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/publication/</link>
+      <atom:link href="http://localhost:1313/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://wangjohn5507.github.io/media/icon_hu9dfd98774236d285c9d9c97365ecb238_49697_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/media/icon_hu9dfd98774236d285c9d9c97365ecb238_49697_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
-      <link>https://wangjohn5507.github.io/publication/</link>
+      <link>http://localhost:1313/publication/</link>
     </image>
     
     <item>
       <title>YTLR: Extracting yeast transcription factor-gene associations from the literature using automated literature readers</title>
-      <link>https://wangjohn5507.github.io/publication/journal-article-2/</link>
+      <link>http://localhost:1313/publication/journal-article-2/</link>
       <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://wangjohn5507.github.io/publication/journal-article-2/</guid>
+      <guid>http://localhost:1313/publication/journal-article-2/</guid>
       <description>&lt;!-- 
 
 
@@ -55,9 +55,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>YTLR: Extracting yeast transcription factor-gene associations from the literature using automated literature readers</title>
-      <link>https://wangjohn5507.github.io/publication/journal-article-3/</link>
+      <link>http://localhost:1313/publication/journal-article-3/</link>
       <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://wangjohn5507.github.io/publication/journal-article-3/</guid>
+      <guid>http://localhost:1313/publication/journal-article-3/</guid>
       <description>&lt;!-- 
 
 
@@ -96,9 +96,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>High-efficiency classification of injured causes on agricultural jujubes using EfficentNet</title>
-      <link>https://wangjohn5507.github.io/publication/conference-paper/</link>
+      <link>http://localhost:1313/publication/conference-paper/</link>
       <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://wangjohn5507.github.io/publication/conference-paper/</guid>
+      <guid>http://localhost:1313/publication/conference-paper/</guid>
       <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
 &lt;p&gt;Due to rapid economic growth, shifts in industry types, and more job opportunities in urban areas, young people born in rural areas are gradually migrating out. Combined with declining fertility rates and an increasing proportion of the elderly population in our society, the aging and even decline of the agricultural labor force has become a concern, making agricultural trancformation more important. In recent years, the development of deep learning in image processing has been applied to agricultural transformation to compensate for the shortage of rural labor. However, the application of this technology is currently limited to high-value export fruits such as mangoes, and relevant research on other undervalued but potentially promising crops is lacking.&lt;/p&gt;
 &lt;p&gt;Based on the EfficientNet deep learning mode, this paper trains a model to identify the cause of damage on jujubes. The experimental data show that the system can successfully identify eight common types of damage on jujubes, and the AUC (Area Under Curve) performance measurement indicator reaches 93.1% on the test set. This research can help non-professionals identify the cause of severe damage that affects quality and classify it for further processing, thereby improving the efficiency and accuracy of workers, reducing the impact of the aging rural population on professional labor, and improving workflows.&lt;/p&gt;
@@ -140,9 +140,9 @@ Supplementary notes can be added here, including [code, math, and images](https:
     
     <item>
       <title>Human IRES Atlas: an integrative platform for studying IRES-driven translational regulation in humans</title>
-      <link>https://wangjohn5507.github.io/publication/journal-article/</link>
+      <link>http://localhost:1313/publication/journal-article/</link>
       <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://wangjohn5507.github.io/publication/journal-article/</guid>
+      <guid>http://localhost:1313/publication/journal-article/</guid>
       <description>&lt;!-- 
 
 
