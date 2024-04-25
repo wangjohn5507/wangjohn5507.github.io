@@ -24,6 +24,9 @@ organizations:
   # - name:
     # url: https://www.example.com/
 
+# Short bio (displayed in user profile at end of posts)
+bio: My research interests include ML, NLP, and SE.
+
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
@@ -34,8 +37,8 @@ profiles:
     url: https://scholar.google.ca/citations?user=nkixRd8AAAAJ&hl=en
   - icon: brands/github
     url: https://github.com/wangjohn5507
-  # - icon: brands/linkedin
-  #   url: https://www.linkedin.com/
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/chung-yu-john-wang-510269226/
   # - icon: brands/instagram
   #   url: https://www.instagram.com/
 
