@@ -17,7 +17,7 @@ marketing:
     description: ''
     twitter: ''
   analytics:
-    google_analytics: ''
+    google_analytics: 'G-BJKBE5R6QS'
     baidu_tongji: ''
     plausible: ''
     fathom: ''
@@ -38,7 +38,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Chung-Yu Wang.'
+    notice: '© {year} Chung-Yu Wang'
     license:
       enable: false
       allow_derivatives: false
