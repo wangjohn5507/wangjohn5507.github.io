@@ -17,7 +17,7 @@ sections:
       username: admin
       # Show a call-to-action button under your biography? (optional)
       button:
-        text: Download Resume
+        text: Resume
         url: uploads/Chung_Yu_Wang_Resume.pdf
     design:
       banner:
