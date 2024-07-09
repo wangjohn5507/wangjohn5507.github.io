@@ -132,7 +132,7 @@ languages:
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
   - title: 'Can ChatGPT Support Developers? An Empirical Evaluation of Large Language Models for Code Generation'
-    url: https://arxiv.org/abs/2402.11702
+    url: https://ieeexplore.ieee.org/abstract/document/10555687
     date: '2024-03-26'
     awarder: 21st International Conference on Mining Software Repositories (MSR ’24)
     icon: Conf
