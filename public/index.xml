@@ -250,10 +250,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
-               /post/project6/example1_hue8bcc111d2df2ee66c6034c671b59dcf_500534_3b5246d936998cf0feb0b418f6a0e727.webp 400w,
+               /post/project6/example1_hue8bcc111d2df2ee66c6034c671b59dcf_500534_6666612c1c8a9fe62f7375ddf4342369.webp 400w,
                /post/project6/example1_hue8bcc111d2df2ee66c6034c671b59dcf_500534_35d3eb9c27a508383bc7dff33053aae0.webp 760w,
                /post/project6/example1_hue8bcc111d2df2ee66c6034c671b59dcf_500534_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/post/project6/example1_hue8bcc111d2df2ee66c6034c671b59dcf_500534_3b5246d936998cf0feb0b418f6a0e727.webp&#34;
+               src=&#34;http://localhost:1313/post/project6/example1_hue8bcc111d2df2ee66c6034c671b59dcf_500534_6666612c1c8a9fe62f7375ddf4342369.webp&#34;
                width=&#34;760&#34;
                height=&#34;392&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -279,10 +279,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
-               /post/project6/example2_hu9f9da14187bb081a064f88202f56e796_667172_b12037fa061721b855be6a4c13cebb55.webp 400w,
+               /post/project6/example2_hu9f9da14187bb081a064f88202f56e796_667172_9ebdc96e9cd5567ad964fc0f76b1f5df.webp 400w,
                /post/project6/example2_hu9f9da14187bb081a064f88202f56e796_667172_1fb342387d746f7ce8429d8528330a12.webp 760w,
                /post/project6/example2_hu9f9da14187bb081a064f88202f56e796_667172_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/post/project6/example2_hu9f9da14187bb081a064f88202f56e796_667172_b12037fa061721b855be6a4c13cebb55.webp&#34;
+               src=&#34;http://localhost:1313/post/project6/example2_hu9f9da14187bb081a064f88202f56e796_667172_9ebdc96e9cd5567ad964fc0f76b1f5df.webp&#34;
                width=&#34;760&#34;
                height=&#34;286&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -308,10 +308,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
-               /post/project6/example3_huce0fe93dd7006f2d60e1d216e8f62809_318738_b174ccff90cbdc544222948617c039a0.webp 400w,
+               /post/project6/example3_huce0fe93dd7006f2d60e1d216e8f62809_318738_eb8a0ef4da638afa5a1e3b568e340f53.webp 400w,
                /post/project6/example3_huce0fe93dd7006f2d60e1d216e8f62809_318738_8c1501536aed236bd5da9e594c3dbbdb.webp 760w,
                /post/project6/example3_huce0fe93dd7006f2d60e1d216e8f62809_318738_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/post/project6/example3_huce0fe93dd7006f2d60e1d216e8f62809_318738_b174ccff90cbdc544222948617c039a0.webp&#34;
+               src=&#34;http://localhost:1313/post/project6/example3_huce0fe93dd7006f2d60e1d216e8f62809_318738_eb8a0ef4da638afa5a1e3b568e340f53.webp&#34;
                width=&#34;760&#34;
                height=&#34;267&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;

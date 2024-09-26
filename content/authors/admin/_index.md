@@ -131,13 +131,27 @@ languages:
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
+  - title: 'Selection of Prompt Engineering Techniques for Code Generation through Predicting Code Complexity'
+    url: https://arxiv.org/abs/2409.16416
+    date: '2024-09-24'
+    awarder: Arxiv (Under review)
+    icon: arxiv
+    summary: |
+      PET-Select is a PET-agnostic model designed to improve the accuracy of code generation by selecting the most appropriate prompt engineering technique (PET) based on code complexity. It uses contrastive learning to distinguish between simple and complex queries, enabling more effective PET selection. Evaluations show PET-Select improves pass@1 accuracy by up to 1.9% and reduces token usage by 74.8%, optimizing the code generation process across benchmarks.
+  - title: 'Task-oriented Prompt Enhancement via Script Generation'
+    url: https://arxiv.org/abs/2409.16418
+    date: '2024-04-26'
+    awarder: Arxiv (Under review)
+    icon: arxiv
+    summary: |
+      TITAN is a novel strategy designed to enhance large language models' (LLMs) performance on task-oriented prompts by using a universal, zero-shot approach. It eliminates the need for task-specific instructions and manual efforts by leveraging step-back and chain-of-thought prompting techniques to refine the code-generation process. In evaluations, TITAN outperforms existing zero-shot methods, achieving state-of-the-art performance in 8 out of 11 tasks, offering a significant improvement in handling everyday task-oriented prompts.
   - title: 'Can ChatGPT Support Developers? An Empirical Evaluation of Large Language Models for Code Generation'
     url: https://ieeexplore.ieee.org/abstract/document/10555687
     date: '2024-03-26'
     awarder: 21st International Conference on Mining Software Repositories (MSR ’24)
     icon: Conf
-    # summary: |
-    #   Large language models (LLMs) have demonstrated notable proficiency in code generation, with numerous prior studies showing their promising capabilities in various development scenarios. However, these studies mainly provide evaluations in research settings, which leaves a significant gap in understanding how effectively LLMs can support developers in real-world. To address this, we conducted an empirical analysis of conversations in DevGPT, a dataset collected from developers' conversations with ChatGPT (captured with the Share Link feature on platforms such as GitHub). Our empirical findings indicate that the current practice of using LLM-generated code is typically limited to either demonstrating high-level concepts or providing examples in documentation, rather than to be used as production-ready code. These findings indicate that there is much future work needed to improve LLMs in code generation before they can be integral parts of modern software development.
+    summary: |
+      Large language models (LLMs) have shown promise in code generation, but existing studies focus mainly on research settings, leaving gaps in understanding their real-world utility. An empirical analysis of developer conversations from the DevGPT dataset reveals that LLM-generated code is primarily used for demonstrating concepts or examples rather than as production-ready code. These findings highlight the need for further improvements before LLMs can play a significant role in modern software development.
   - title: 'YTLR: Extracting yeast transcription factor-gene associations from the literature using automated literature readers'
     url: https://www.sciencedirect.com/science/article/pii/S2001037022003750
     date: '2022-01-01'
