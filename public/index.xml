@@ -2,21 +2,333 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chung-Yu Wang</title>
-    <link>https://wangjohn5507.github.io/</link>
-      <atom:link href="https://wangjohn5507.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/</link>
+      <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <description>Chung-Yu Wang</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://wangjohn5507.github.io/media/icon_hu9dfd98774236d285c9d9c97365ecb238_49697_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:1313/media/icon_hu9dfd98774236d285c9d9c97365ecb238_49697_512x512_fill_lanczos_center_3.png</url>
       <title>Chung-Yu Wang</title>
-      <link>https://wangjohn5507.github.io/</link>
+      <link>http://localhost:1313/</link>
     </image>
     
     <item>
+      <title>Fairness Algorithm Design</title>
+      <link>http://localhost:1313/post/project4/</link>
+      <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/project4/</guid>
+      <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;Services like Uber and Uber Eats can be modeled as online bipartite matching problems because they involve dynamically matching two sets of participants—drivers (or delivery personnel) and customers—in real-time. In this model, customers requesting rides or placing food orders arrive over time and need to be immediately matched with available drivers or couriers, considering factors like proximity and availability. This mirrors the online bipartite matching problem where decisions must be made without knowledge of future requests, making it a relevant framework for understanding and optimizing the efficiency of such services.&lt;/p&gt;
+&lt;p&gt;However, we observed that many successful algorithms emphasize a balance between fairness and efficiency, often employing greedy algorithms. Drawing inspiration from these findings, we have proposed a new algorithm called Priority-Update-Match, which ensure fairness among different groups.&lt;/p&gt;
+&lt;h2 id=&#34;approach&#34;&gt;Approach&lt;/h2&gt;
+&lt;p&gt;In the Uber scenario, this algorithm functions by keeping all driver groups organized in a priority queue based on factors like current demand and driver availability. When a new rider requests a ride (vertex v), the system first looks at the driver groups with the lowest priority values—typically areas with the most available drivers or least demand. Within these groups, it ranks all potential drivers (vertices u′ ∈ U) in descending order based on suitability factors such as proximity, estimated pick-up time, and driver ratings (edge weights). The system then attempts to match the rider with the best available driver. If a suitable match is found, they are paired, and the group&amp;rsquo;s priority value is increased to reflect the added workload. If no match is found in the initial group, the system proceeds to groups with higher priority values (areas with fewer available drivers or higher demand). If no match can be made after checking all groups, the rider&amp;rsquo;s request is dropped. Finally, the priority queue is updated to represent the new state of driver availability and group priorities.&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
+               /post/project4/example_hud39f5e4517876927c87cbdad8ca1c9d7_785554_02d11081941cb0bb5b7edeb5f33454da.webp 400w,
+               /post/project4/example_hud39f5e4517876927c87cbdad8ca1c9d7_785554_fa4446b8e2f14105891831c9cf01535e.webp 760w,
+               /post/project4/example_hud39f5e4517876927c87cbdad8ca1c9d7_785554_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/post/project4/example_hud39f5e4517876927c87cbdad8ca1c9d7_785554_02d11081941cb0bb5b7edeb5f33454da.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;317&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;For instance, consider two groups of drivers, Black and White. When a passenger requests a ride at time T: 1, our algorithm will first prioritize matching drivers from the group with the lowest priority value (at T: 1, both groups have the same priority). The algorithm matches the passenger with a driver from the appropriate group based on factors like proximity, with a matching weight of 3. After the match, the priority value of the group is updated by adding the weight of the match (weight = 3). At time T: 2, another passenger requests a ride. Even though the match with a driver from the Black group would yield a higher weight (weight = 10), the algorithm selects a driver from the White group because it has a lower priority value, ensuring fairness between groups. The priority value of the White group is then updated with the weight of the match (weight = 6). This approach maintains fairness between groups while performing online bipartite matching.&lt;/p&gt;
+&lt;h2 id=&#34;experiments&#34;&gt;Experiments&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
+               /post/project4/result_hue6172a8dcb47b9b23cacd331f949d3f3_46629_0983a2ad44abe2cc451b7e64bb9e7cad.webp 400w,
+               /post/project4/result_hue6172a8dcb47b9b23cacd331f949d3f3_46629_4894e8dcb93e6fe3ec91056dedff2d4c.webp 760w,
+               /post/project4/result_hue6172a8dcb47b9b23cacd331f949d3f3_46629_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/post/project4/result_hue6172a8dcb47b9b23cacd331f949d3f3_46629_0983a2ad44abe2cc451b7e64bb9e7cad.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;270&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;For our experiment, we set the number of groups to be 4, with each group containing 25 drivers, resulting in a total of 100 drivers. We conduct two experiments: one with 200 passengers to ensure maximum matching opportunities, and another with only 20 drivers, simulating a scenario where resources are limited. This setup allows us to assess the performance of our algorithm under different scenarios, varying the number of drivers available for matching.&lt;/p&gt;
+&lt;p&gt;The Figure 1 shows that &lt;strong&gt;both our algorithm and the greedy algorithm can achieve fair matching when there are sufficient passengers&lt;/strong&gt;. When enough passengers are available, nearly every driver can obtain their most desired passengers, resulting in a higher total weight.&lt;/p&gt;
+&lt;p&gt;The Figure 2 shows that &lt;strong&gt;our algorithm achieves better fairness among different groups&lt;/strong&gt; when not enough passengers are available. This highlights the advantage of our algorithm, which consistently ensures fairness among different groups. Moreover, this scenario, where the number of items (passengers in this case) is restricted, is more reflective of real-life situations. For instance, in reality, job applicants often encounter limited job opportunities, making it challenging to secure ideal positions.&lt;/p&gt;
+&lt;h2 id=&#34;resource&#34;&gt;Resource&lt;/h2&gt;
+&lt;p&gt;To review the paper and know more details about the project, welcome to visit my &lt;a href=&#34;https://github.com/wangjohn5507/Fairness_Online_Bipartite_Matching&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bias Mitigation for Medical Images</title>
+      <link>http://localhost:1313/post/project5/</link>
+      <pubDate>Sat, 20 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/project5/</guid>
+      <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;In this project, we investigate how bias in machine learning models, particularly those used in medical image analysis, can lead to unfair outcomes across various demographic subgroups. We focus on chest radiograph datasets and highlight the necessity of fairness in medical AI, especially considering the significant implications bias can have on healthcare decisions. The motivation behind the work stems from well-documented cases of racial, gender, and socioeconomic disparities in the performance of AI models used for disease prediction. These biases can exacerbate existing healthcare inequities, particularly in underrepresented populations. Our goal is to mitigate these biases through preprocessing techniques to improve fairness in model outcomes.&lt;/p&gt;
+&lt;h2 id=&#34;approach&#34;&gt;Approach&lt;/h2&gt;
+&lt;p&gt;The approach employed in this project involves &lt;strong&gt;the use of Generalized Cross Entropy (GCE) Loss to identify biased data points within the dataset&lt;/strong&gt;. By analyzing the loss associated with each data point, the paper introduces upsampling and downsampling strategies to correct biases. Upsampling involves increasing the representation of data points from subgroups with higher false positive rates (FPR), while downsampling removes data points that disproportionately benefit from lower FPR. These methods were applied to mitigate bias within the model’s training process, allowing for more equitable outcomes. Additionally, we compare the use of GCE Loss with Binary Cross-Entropy (BCE) Loss to evaluate the impact of different loss functions on bias mitigation.&lt;/p&gt;
+&lt;h2 id=&#34;experiments&#34;&gt;Experiments&lt;/h2&gt;
+&lt;p&gt;Experiments were conducted on the MIMIC-CXR dataset, which includes demographic attributes like race, gender, age, and insurance type. The project utilizes both GCE and BCE Loss across multiple subgroups to evaluate the effectiveness of upsampling and downsampling techniques. The performance of the models was evaluated using the Area Under the Curve (AUC) and FPR metrics. The experiments reveal that combining upsampling and downsampling strategies effectively reduces the FPR gap across subgroups. The results of these experiments were presented in tables to demonstrate the impact of bias mitigation across various sensitive attributes and the effectiveness of different sampling strategies.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
+               /post/project5/result1_hu5283a97f313947f76096d3248abc4bc0_287899_2eae41ffcadbe5c7faae2a474b67d0ea.webp 400w,
+               /post/project5/result1_hu5283a97f313947f76096d3248abc4bc0_287899_2a44a519904a58ef25e4579749fd270f.webp 760w,
+               /post/project5/result1_hu5283a97f313947f76096d3248abc4bc0_287899_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/post/project5/result1_hu5283a97f313947f76096d3248abc4bc0_287899_2eae41ffcadbe5c7faae2a474b67d0ea.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;130&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
+               /post/project5/result3_hu4d2af54c49de51484e315e7940e64a38_344793_c6d8797053b782c04eb2b2e4ab6ded0b.webp 400w,
+               /post/project5/result3_hu4d2af54c49de51484e315e7940e64a38_344793_5c30ae7ff053f353d90f4d991028e54a.webp 760w,
+               /post/project5/result3_hu4d2af54c49de51484e315e7940e64a38_344793_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/post/project5/result3_hu4d2af54c49de51484e315e7940e64a38_344793_c6d8797053b782c04eb2b2e4ab6ded0b.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;388&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
+               /post/project5/result2_hudbf5b08b0076735691aa505fd0f3cc70_238242_9973486570484a14e93ab552547f52d4.webp 400w,
+               /post/project5/result2_hudbf5b08b0076735691aa505fd0f3cc70_238242_3627441d9be4b09c2e16335fb785cd10.webp 760w,
+               /post/project5/result2_hudbf5b08b0076735691aa505fd0f3cc70_238242_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/post/project5/result2_hudbf5b08b0076735691aa505fd0f3cc70_238242_9973486570484a14e93ab552547f52d4.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;186&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The results indicate that &lt;strong&gt;applying a combination of 50% upsampling and downsampling using GCE Loss leads to a significant reduction in bias, as reflected by the narrowing of the FPR gap without a substantial decrease in AUC performance (Table 1 and Figure 1)&lt;/strong&gt;. Moreover, we observed that &lt;strong&gt;targeting specific sensitive attributes, such as age, proved to be particularly effective in reducing bias (Table 2)&lt;/strong&gt;. In conclusion, the project provides a promising approach for mitigating bias in medical image datasets, although we note some limitations, including the need for further exploration of additional datasets, loss functions, and validation techniques to ensure the generalizability of our approach.&lt;/p&gt;
+&lt;h2 id=&#34;resource&#34;&gt;Resource&lt;/h2&gt;
+&lt;p&gt;To review the paper and know more details about the project, welcome to visit my &lt;a href=&#34;https://github.com/wangjohn5507/Debias-medical-images&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;. Due to dataset access restrictions, we are unable to publicly share the dataset used in our experiments.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Distillation with Small Language Model</title>
+      <link>http://localhost:1313/post/project6/</link>
+      <pubDate>Fri, 08 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/project6/</guid>
+      <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;In this project, we present a novel approach to tackling the challenge of translating natural language into SQL queries using smaller language models. The motivation stems from the growing demand for large language models in tasks such as Text-to-SQL, where users can interact with databases using natural language. While large models like GPT-3 and T5 show promise, their training requires significant human effort and high computational costs, making them less accessible for many. To address this, the study proposes using smaller models and recursive distillation to reduce the need for human intervention and lower computational expenses.&lt;/p&gt;
+&lt;h2 id=&#34;approach&#34;&gt;Approach&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
+               /post/project6/framework_hu15492869e20bb7c3bb8936276c214faf_372962_ce0bcc1f92c6b36771d6d2d805361400.webp 400w,
+               /post/project6/framework_hu15492869e20bb7c3bb8936276c214faf_372962_314bf0a8b3f3e842f933702f86a0673d.webp 760w,
+               /post/project6/framework_hu15492869e20bb7c3bb8936276c214faf_372962_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/post/project6/framework_hu15492869e20bb7c3bb8936276c214faf_372962_ce0bcc1f92c6b36771d6d2d805361400.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;400&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The proposed approach relies on a three-step framework designed to automate the training process. First, the model generates multiple question-answer (QA) pairs based on few-shot prompts. In the second step, critic metrics are applied to filter out low-quality question-answer pairs. Finally, the filtered data is used to fine-tune the small language model, which is then iteratively refined through recursive distillation. The primary model used is Incoder-1B, though the framework allows flexibility to incorporate any model pretrained on code. This recursive learning approach helps the model self-learn to improve performance in generating SQL queries without requiring large-scale, human-annotated datasets.&lt;/p&gt;
+&lt;h2 id=&#34;experiments&#34;&gt;Experiments&lt;/h2&gt;
+&lt;p&gt;In the experimental section, we apply their framework using the SPIDER dataset, which contains over 5,000 unique SQL queries across multiple databases. Execution accuracy and test-suite accuracy are used as the main critic metrics to evaluate the quality of the generated SQL queries. The process involved generating SQL queries for a set of natural language questions, and those that did not meet the thresholds were filtered out. This method showed that even small language models could achieve a high level of performance in Text-to-SQL tasks when trained effectively using recursive distillation.&lt;/p&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
+               /post/project6/example1_hue8bcc111d2df2ee66c6034c671b59dcf_500534_3b5246d936998cf0feb0b418f6a0e727.webp 400w,
+               /post/project6/example1_hue8bcc111d2df2ee66c6034c671b59dcf_500534_35d3eb9c27a508383bc7dff33053aae0.webp 760w,
+               /post/project6/example1_hue8bcc111d2df2ee66c6034c671b59dcf_500534_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/post/project6/example1_hue8bcc111d2df2ee66c6034c671b59dcf_500534_3b5246d936998cf0feb0b418f6a0e727.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;392&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The first use case illustrates the construction of a few-shot prompt template based on a given database schema and associated natural language questions (Figure 1)&lt;/strong&gt;. This standardized prompt helps to ensure consistent quality in the candidate question-answer pairs generated by the model. The authors show that by providing the model with the database schema and a few examples of questions and SQL queries, the small language model can effectively generate SQL queries for new questions.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
+               /post/project6/example2_hu9f9da14187bb081a064f88202f56e796_667172_b12037fa061721b855be6a4c13cebb55.webp 400w,
+               /post/project6/example2_hu9f9da14187bb081a064f88202f56e796_667172_1fb342387d746f7ce8429d8528330a12.webp 760w,
+               /post/project6/example2_hu9f9da14187bb081a064f88202f56e796_667172_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/post/project6/example2_hu9f9da14187bb081a064f88202f56e796_667172_b12037fa061721b855be6a4c13cebb55.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;286&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The second use case highlights the use of critic metrics—execution accuracy and test-suite accuracy—to filter out low-quality SQL queries (Figure 2)&lt;/strong&gt;. After generating multiple candidate question-answer pairs from the prompts, the system applies these metrics to discard incorrect or non-executable SQL queries. This filtering ensures that only high-quality data is used to fine-tune the small language model in subsequent iterations.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
+               /post/project6/example3_huce0fe93dd7006f2d60e1d216e8f62809_318738_b174ccff90cbdc544222948617c039a0.webp 400w,
+               /post/project6/example3_huce0fe93dd7006f2d60e1d216e8f62809_318738_8c1501536aed236bd5da9e594c3dbbdb.webp 760w,
+               /post/project6/example3_huce0fe93dd7006f2d60e1d216e8f62809_318738_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/post/project6/example3_huce0fe93dd7006f2d60e1d216e8f62809_318738_b174ccff90cbdc544222948617c039a0.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;267&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The third use case demonstrates how the recursive distillation process works for improving the Text-to-SQL performance of a small language model like Incoder-1B (Figure 3)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Overall, the use cases demonstrate the practical application of the framework in reducing human involvement in training and enhancing the performance of small language models on Text-to-SQL tasks. The process of recursive distillation, combined with critic metrics, allows the model to iteratively improve its SQL generation capabilities in an automated manner.&lt;/p&gt;
+&lt;h2 id=&#34;resource&#34;&gt;Resource&lt;/h2&gt;
+&lt;p&gt;To review the paper and know more details about the project, welcome to visit my &lt;a href=&#34;https://github.com/wangjohn5507/Distillation-with-small-LM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Pick Up Choose</title>
-      <link>https://wangjohn5507.github.io/post/project3/</link>
+      <link>http://localhost:1313/post/project3/</link>
       <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://wangjohn5507.github.io/post/project3/</guid>
+      <guid>http://localhost:1313/post/project3/</guid>
       <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
 &lt;p&gt;Continuing previous &lt;a href=&#34;../../publication/conference-paper/&#34;&gt;research&lt;/a&gt;, this project is my graduation project, which used Machine Learning techniques to solve the agricultural workforce scarcity problem that severly affects Taiwan&amp;rsquo;s agriculture industry. My group member and I discovered that the advancement in cities provides more job opportunities and higher salaries that attract young people to move from the countryside to cities. As a result, agricultural labour has gradually decreased in recent years, posing a massive crisis to Taiwan&amp;rsquo;s agricultural industry. Therefore, we focused on the issue of labour shortages when classifying date grades in the harvest season.&lt;/p&gt;
 &lt;h2 id=&#34;approach&#34;&gt;Approach&lt;/h2&gt;
@@ -44,7 +356,7 @@
                /post/project3/english-phone_hu6d0acbccfbe9a2dd02265546ddd9f253_147061_0d9836790d21da36964503bcdfffba87.webp 400w,
                /post/project3/english-phone_hu6d0acbccfbe9a2dd02265546ddd9f253_147061_dacce709783da303cae60993fa0771f9.webp 760w,
                /post/project3/english-phone_hu6d0acbccfbe9a2dd02265546ddd9f253_147061_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://wangjohn5507.github.io/post/project3/english-phone_hu6d0acbccfbe9a2dd02265546ddd9f253_147061_0d9836790d21da36964503bcdfffba87.webp&#34;
+               src=&#34;http://localhost:1313/post/project3/english-phone_hu6d0acbccfbe9a2dd02265546ddd9f253_147061_0d9836790d21da36964503bcdfffba87.webp&#34;
                width=&#34;500&#34;
                height=&#34;541&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -58,9 +370,9 @@
     
     <item>
       <title>Moving soldiers</title>
-      <link>https://wangjohn5507.github.io/post/project2/</link>
+      <link>http://localhost:1313/post/project2/</link>
       <pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://wangjohn5507.github.io/post/project2/</guid>
+      <guid>http://localhost:1313/post/project2/</guid>
       <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
 &lt;p&gt;To familiar with algorithms including DFS, BFS, and UCS, the objective of the project was designing a simple GUI interface and simulated the movement strategy in League of Legends.&lt;/p&gt;
 &lt;p&gt;
@@ -85,7 +397,7 @@
                /post/project2/move_hu36e86e37c1757a4405f62bfd2d0a4ba9_194599_53366a9cb83ac309c67b3a30260bcbc7.webp 400w,
                /post/project2/move_hu36e86e37c1757a4405f62bfd2d0a4ba9_194599_eeea941fe81f66a4da4046e7322c08b3.webp 760w,
                /post/project2/move_hu36e86e37c1757a4405f62bfd2d0a4ba9_194599_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://wangjohn5507.github.io/post/project2/move_hu36e86e37c1757a4405f62bfd2d0a4ba9_194599_53366a9cb83ac309c67b3a30260bcbc7.webp&#34;
+               src=&#34;http://localhost:1313/post/project2/move_hu36e86e37c1757a4405f62bfd2d0a4ba9_194599_53366a9cb83ac309c67b3a30260bcbc7.webp&#34;
                width=&#34;494&#34;
                height=&#34;464&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -100,9 +412,9 @@
     
     <item>
       <title>Who&#39;s the victim?</title>
-      <link>https://wangjohn5507.github.io/post/project1/</link>
+      <link>http://localhost:1313/post/project1/</link>
       <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://wangjohn5507.github.io/post/project1/</guid>
+      <guid>http://localhost:1313/post/project1/</guid>
       <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
 &lt;p&gt;My group members and I believe that board games should not be limited by their form. Instead, they can show up in a novel way by turning them into computer games. Therefore, from 2020 September to 2020 December, we designed a computer game which concepts were adapted from the board game called &amp;ldquo;Bang!&amp;rdquo;.&lt;/p&gt;
 &lt;h2 id=&#34;implementation&#34;&gt;Implementation&lt;/h2&gt;
@@ -128,7 +440,7 @@
                /post/project1/process_hu62e027757ae918dd529c341073bbc270_151205_a832fe4fc3b516f61ec4cc41b6475f78.webp 400w,
                /post/project1/process_hu62e027757ae918dd529c341073bbc270_151205_e08f5d2e1828055e8cb4913f3568474b.webp 760w,
                /post/project1/process_hu62e027757ae918dd529c341073bbc270_151205_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;https://wangjohn5507.github.io/post/project1/process_hu62e027757ae918dd529c341073bbc270_151205_a832fe4fc3b516f61ec4cc41b6475f78.webp&#34;
+               src=&#34;http://localhost:1313/post/project1/process_hu62e027757ae918dd529c341073bbc270_151205_a832fe4fc3b516f61ec4cc41b6475f78.webp&#34;
                width=&#34;760&#34;
                height=&#34;477&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;

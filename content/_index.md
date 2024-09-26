@@ -50,7 +50,7 @@ sections:
       subtitle: ''
       text: 'Check out my featured projects below!'
       # Choose how many pages you would like to display (0 = all pages)
-      count: 5
+      count: 6
       # Filter on criteria
       filters:
         # The folders to display content from
@@ -73,6 +73,10 @@ sections:
     design:
       # Choose a listing view
       view: card
+      # view: date-title-summary
+      # fill_image: false
+      # columns: 2
+  
 
   # - block: collection
   #   id: publications
