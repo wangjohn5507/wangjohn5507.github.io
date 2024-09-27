@@ -25,7 +25,7 @@ organizations:
     # url: https://www.example.com/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include ML, NLP, and SE.
+bio: My research interests include SE, NLP, and ML.
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -175,4 +175,4 @@ awards:
   
 ---
 
-I am currently a graduate student of Computer Science (M.Sc) at [York University (YorkU)](https://www.yorku.ca/) in Canada supervised by Professor [Hung Viet Pham](https://hvpham.github.io/). My research interests include Machine Learning, Natural Language Processing, and Software Engineering.
+I am currently a graduate student of Computer Science (M.Sc) at [York University (YorkU)](https://www.yorku.ca/) in Canada supervised by Professor [Hung Viet Pham](https://hvpham.github.io/). My research interests include but are not limited to Software Engineering (AI4SE), Natural Language Processing, and Machine Learning. More specifically, I focus on optimizing LLMs and FMs for software engineering tasks, such as prompt engineering for code generation.
