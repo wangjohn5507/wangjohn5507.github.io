@@ -72,10 +72,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
-               /post/project4/result_hu4d9ef0308d59339eb608a1deaca6080a_53295_94e142aa27caf918aa4c0f83c3615707.webp 400w,
-               /post/project4/result_hu4d9ef0308d59339eb608a1deaca6080a_53295_812a8638cc1a4329944c60658707e87b.webp 760w,
+               /post/project4/result_hu4d9ef0308d59339eb608a1deaca6080a_53295_1a69d6057b5215a2ebb75e7a7cd9a571.webp 400w,
+               /post/project4/result_hu4d9ef0308d59339eb608a1deaca6080a_53295_18794b9a5b4b2ddd98e1943e9c7da554.webp 760w,
                /post/project4/result_hu4d9ef0308d59339eb608a1deaca6080a_53295_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/post/project4/result_hu4d9ef0308d59339eb608a1deaca6080a_53295_94e142aa27caf918aa4c0f83c3615707.webp&#34;
+               src=&#34;http://localhost:1313/post/project4/result_hu4d9ef0308d59339eb608a1deaca6080a_53295_1a69d6057b5215a2ebb75e7a7cd9a571.webp&#34;
                width=&#34;760&#34;
                height=&#34;270&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
