@@ -52,4 +52,4 @@ The first use case illustrates the process initiated when a user submits a quest
 
 ## Resource
 
-To review the paper and know more details about the project, welcome to visit my [Github](https://github.com/wangjohn5507/insightme).
+To review the project, welcome to visit my [Github](https://github.com/wangjohn5507/insightme).
