@@ -32,7 +32,7 @@ sections:
   - block: cta-button-list
     content:
       buttons:
-        - text: 🤖 InsightMe - A chatbot that answer questions about me using RAG and Langchain.
+        - text: 🤖 InsightMe - An altenative way to know me through chatbot.
           # icon: solid/robot
           url: https://insightme.site/assistant
 
