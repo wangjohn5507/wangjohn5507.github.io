@@ -19,6 +19,11 @@ sections:
       button:
         text: Resume
         url: uploads/Chung_Yu_Wang_Resume.pdf
+        # - text: My AI Chatbot
+        #   url: https://insightme.site/assistant
+      secondary_action:
+        text: My AI Chatbot
+        url: https://insightme.site/assistant
     design:
       banner:
         # Upload your cover image to the `assets/media/` folder and reference it here
@@ -26,6 +31,14 @@ sections:
       biography:
         # Customize the style of your biography text
         style: 'text-align: justify; font-size: 0.8em;'
+
+  - block: cta-button-list
+    content:
+      buttons:
+        - text: My AI Chatbot
+          # icon: solid/robot
+          url: https://insightme.site/assistant
+
 
   - block: experience
     id: experience

@@ -120,12 +120,12 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
-               /post/project5/result1_hu5283a97f313947f76096d3248abc4bc0_287899_2eae41ffcadbe5c7faae2a474b67d0ea.webp 400w,
-               /post/project5/result1_hu5283a97f313947f76096d3248abc4bc0_287899_2a44a519904a58ef25e4579749fd270f.webp 760w,
-               /post/project5/result1_hu5283a97f313947f76096d3248abc4bc0_287899_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/post/project5/result1_hu5283a97f313947f76096d3248abc4bc0_287899_2eae41ffcadbe5c7faae2a474b67d0ea.webp&#34;
+               /post/project5/result1_hu8757b2e1886f866e2e63d1287fbc3eba_401771_5748bfb0b55e6cd19d2642cdc9576d5c.webp 400w,
+               /post/project5/result1_hu8757b2e1886f866e2e63d1287fbc3eba_401771_5082649d2e366807003e22051d313569.webp 760w,
+               /post/project5/result1_hu8757b2e1886f866e2e63d1287fbc3eba_401771_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/post/project5/result1_hu8757b2e1886f866e2e63d1287fbc3eba_401771_5748bfb0b55e6cd19d2642cdc9576d5c.webp&#34;
                width=&#34;760&#34;
-               height=&#34;130&#34;
+               height=&#34;139&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 
