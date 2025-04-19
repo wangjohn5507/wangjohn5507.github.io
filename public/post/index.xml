@@ -41,10 +41,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
-               /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_00124cb8d59a0fc6899a8950a68dea5c.webp 400w,
-               /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_98f1fc5a335fb1844826e17706dd94d8.webp 760w,
+               /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_1fc5c4e28a65f04ff4cbbd9f6dde0aef.webp 400w,
+               /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_76affd70ab7105bfb21777856468a413.webp 760w,
                /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_00124cb8d59a0fc6899a8950a68dea5c.webp&#34;
+               src=&#34;http://localhost:1313/post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_1fc5c4e28a65f04ff4cbbd9f6dde0aef.webp&#34;
                width=&#34;760&#34;
                height=&#34;350&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;

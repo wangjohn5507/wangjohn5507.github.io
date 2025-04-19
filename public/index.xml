@@ -18,7 +18,7 @@
       <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/project7/</guid>
       <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
-&lt;p&gt;The motivation behind this project stems from my desire to offer a more engaging and personalized way for visitors to learn about me beyond a static resume or bio. By integrating a custom AI assistant into my personal website, powered by Retrieval-Augmented Generation (RAG) and my own documents, I aim to create an interactive experience where users can ask questions and receive accurate, conversational answers about my background, skills, and experiences. This not only demonstrates my technical capabilities in building full-stack AI applications, but also reflects my passion for creating intuitive, human-centered technology.&lt;/p&gt;
+&lt;p&gt;The motivation behind this project stems from my desire to offer a more engaging and personalized way for visitors to learn about me beyond a static resume or bio. By integrating a custom AI assistant into my personal website, powered by Retrieval-Augmented Generation (RAG) and my own documents, I aim to create an interactive experience where users can ask questions and receive accurate, conversational answers about my background, skills, and experiences. This not only demonstrates my technical capabilities in building full-stack AI applications, but also reflects my passion for creating intuitive, human-centered technology. You can play around the application with the link: &lt;a href=&#34;https://insightme.site/assistant&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://insightme.site/assistant&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;approach&#34;&gt;Approach&lt;/h2&gt;
 &lt;p&gt;This project leverages a Retrieval-Augmented Generation (RAG) approach, combining the power of OpenAI’s GPT-3.5 language model with Langchain and Pinecone for document retrieval. First, my personal documents—such as my resume—are indexed using embedding-based vector search. When a user submits a question, the system first evaluates its relevance, then reformulates it if necessary to a standalone version using a rephrasing prompt. Relevant document chunks are then retrieved from the vector store and passed along with the user’s question to the language model, which generates a contextualized, conversational response. It is worth noting that the system also integrates memory, allowing it to retain the chat history between the user and the chatbot. This conversational context is used as a reference for the language model, enabling it to generate more accurate and contextually relevant responses based on the user’s previous questions. This memory mechanism enhances the overall coherence and continuity of the interaction, creating a more natural and personalized user experience. The entire pipeline is orchestrated using LangGraph, and deployed as a full-stack application with a FastAPI backend and a clean Next.js frontend.&lt;/p&gt;
 &lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
@@ -41,10 +41,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
-               /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_00124cb8d59a0fc6899a8950a68dea5c.webp 400w,
-               /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_98f1fc5a335fb1844826e17706dd94d8.webp 760w,
+               /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_1fc5c4e28a65f04ff4cbbd9f6dde0aef.webp 400w,
+               /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_76affd70ab7105bfb21777856468a413.webp 760w,
                /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_00124cb8d59a0fc6899a8950a68dea5c.webp&#34;
+               src=&#34;http://localhost:1313/post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_1fc5c4e28a65f04ff4cbbd9f6dde0aef.webp&#34;
                width=&#34;760&#34;
                height=&#34;350&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;

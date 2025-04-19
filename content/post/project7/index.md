@@ -5,7 +5,7 @@ date: '2025-04-18T00:00:00Z'
 
 
 tags:
-  - Machine Learning
+  - Retrevial-augmented Generation
   - Language Model
 # Optional external URL for project (replaces project detail page).
 external_link: ''
@@ -37,7 +37,7 @@ slides:
 ---
 ## Motivation
 
-The motivation behind this project stems from my desire to offer a more engaging and personalized way for visitors to learn about me beyond a static resume or bio. By integrating a custom AI assistant into my personal website, powered by Retrieval-Augmented Generation (RAG) and my own documents, I aim to create an interactive experience where users can ask questions and receive accurate, conversational answers about my background, skills, and experiences. This not only demonstrates my technical capabilities in building full-stack AI applications, but also reflects my passion for creating intuitive, human-centered technology.
+The motivation behind this project stems from my desire to offer a more engaging and personalized way for visitors to learn about me beyond a static resume or bio. By integrating a custom AI assistant into my personal website, powered by Retrieval-Augmented Generation (RAG) and my own documents, I aim to create an interactive experience where users can ask questions and receive accurate, conversational answers about my background, skills, and experiences. This not only demonstrates my technical capabilities in building full-stack AI applications, but also reflects my passion for creating intuitive, human-centered technology. You can play around the application with the link: https://insightme.site/assistant.
 
 ## Approach
 
