@@ -35,7 +35,7 @@ sections:
   - block: cta-button-list
     content:
       buttons:
-        - text: My AI Chatbot
+        - text: 🤖 My AI Chatbot - A chatbot that answer questions about me using RAG and Langchain.
           # icon: solid/robot
           url: https://insightme.site/assistant
 
