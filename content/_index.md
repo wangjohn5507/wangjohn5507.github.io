@@ -18,12 +18,9 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Resume
-        url: uploads/Chung_Yu_Wang_Resume.pdf
+        url: uploads/Chung_Yu_Wang_Resume_Career.pdf
         # - text: My AI Chatbot
         #   url: https://insightme.site/assistant
-      secondary_action:
-        text: My AI Chatbot
-        url: https://insightme.site/assistant
     design:
       banner:
         # Upload your cover image to the `assets/media/` folder and reference it here
@@ -35,7 +32,7 @@ sections:
   - block: cta-button-list
     content:
       buttons:
-        - text: 🤖 My AI Chatbot - A chatbot that answer questions about me using RAG and Langchain.
+        - text: 🤖 InsightMe - A chatbot that answer questions about me using RAG and Langchain.
           # icon: solid/robot
           url: https://insightme.site/assistant
 
@@ -63,7 +60,7 @@ sections:
       subtitle: ''
       text: 'Check out my featured projects below!'
       # Choose how many pages you would like to display (0 = all pages)
-      count: 6
+      count: 7
       # Filter on criteria
       filters:
         # The folders to display content from

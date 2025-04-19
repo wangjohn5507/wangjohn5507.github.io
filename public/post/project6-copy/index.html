@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 19, 2025 --><html lang="en-us" dir="ltr"
+<!-- Last Published: April 18, 2025 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
@@ -41,10 +41,10 @@
   
     
   
-  <meta name="description" content="Proposed data preprocessing techniques to mitigate the bias in the medical dataset." />
+  <meta name="description" content="Text-to-SQL tasks with small language models using recursive distillation." />
 
   
-  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/post/project5/" />
+  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/post/project6-copy/" />
 
   
   
@@ -156,7 +156,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu9dfd98774236d285c9d9c97365ecb238_49697_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu9dfd98774236d285c9d9c97365ecb238_49697_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="http://localhost:1313/post/project5/" />
+  <link rel="canonical" href="http://localhost:1313/post/project6-copy/" />
 
   
   
@@ -178,18 +178,18 @@
   <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="Chung-Yu Wang" />
-  <meta property="og:url" content="http://localhost:1313/post/project5/" />
-  <meta property="og:title" content="Bias Mitigation for Medical Images | Chung-Yu Wang" />
-  <meta property="og:description" content="Proposed data preprocessing techniques to mitigate the bias in the medical dataset." /><meta property="og:image" content="http://localhost:1313/post/project5/featured.png" />
-    <meta property="twitter:image" content="http://localhost:1313/post/project5/featured.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:url" content="http://localhost:1313/post/project6-copy/" />
+  <meta property="og:title" content="Distillation with Small Language Model | Chung-Yu Wang" />
+  <meta property="og:description" content="Text-to-SQL tasks with small language models using recursive distillation." /><meta property="og:image" content="http://localhost:1313/post/project6-copy/featured.png" />
+    <meta property="twitter:image" content="http://localhost:1313/post/project6-copy/featured.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2024-04-20T00:00:00&#43;00:00"
+        content="2023-12-08T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-04-20T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2023-12-08T00:00:00&#43;00:00">
   
 
   
@@ -199,7 +199,7 @@
   
 
 
-  <title>Bias Mitigation for Medical Images | Chung-Yu Wang</title>
+  <title>Distillation with Small Language Model | Chung-Yu Wang</title>
 
   
   
@@ -442,25 +442,25 @@
         <ul class="hb-sidebar-list"><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
-    href="/post/project7/"
-    
-  >Question-Answering with RAG
-    </a>
-              
-            </li><li class="flex flex-col "><a
-    class="hb-sidebar-custom-link
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/post/project4/"
     
   >Fairness Algorithm Design
     </a>
               
-            </li><li class="flex flex-col open"><a
+            </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
-      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/post/project5/"
     
   >Bias Mitigation for Medical Images
+    </a>
+              
+            </li><li class="flex flex-col open"><a
+    class="hb-sidebar-custom-link
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+    href="/post/project6-copy/"
+    
+  >Distillation with Small Language Model
     </a>
   
     <ul class="hb-sidebar-mobile-toc"><li>
@@ -483,9 +483,9 @@
             </li>
           <li>
               <a
-                href="#results"
+                href="#examples"
                 class="hb-docs-link"
-              >Results</a>
+              >Examples</a>
             </li>
           <li>
               <a
@@ -561,7 +561,7 @@
         <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#experiments">Experiments</a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#results">Results</a>
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#examples">Examples</a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
         <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#resource">Resource</a>
@@ -587,9 +587,9 @@
 
       
 
-      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Bias Mitigation for Medical Images</h1>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Distillation with Small Language Model</h1>
 
-      <div class="mt-4 mb-16 text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Apr 20, 2024</span>
+      <div class="mt-4 mb-16 text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Dec 8, 2023</span>
         
 
         
@@ -616,9 +616,9 @@
       
       
       
-      <div class="article-header article-container featured-image-wrapper mt-4 mb-16" style="max-width: 720px; max-height: 508px;">
+      <div class="article-header article-container featured-image-wrapper mt-4 mb-16" style="max-width: 720px; max-height: 327px;">
         <div style="position: relative">
-          <img src="/post/project5/featured_hu27b3007bd35cef6a3a272de13813a8be_245796_1551c526405e4d7351ea4d79df322872.webp" width="720" height="508" alt="" class="featured-image">
+          <img src="/post/project6-copy/featured_hu5f4ec1e233559162b60d44db00821613_121004_d0dc426db4c5a1d639cdf9e0b374d7c1.webp" width="720" height="327" alt="" class="featured-image">
           
         </div>
       </div>
@@ -626,12 +626,8 @@
 
       <div class="prose prose-slate lg:prose-xl dark:prose-invert">
         <h2 id="motivation">Motivation</h2>
-<p>In this project, we investigate how bias in machine learning models, particularly those used in medical image analysis, can lead to unfair outcomes across various demographic subgroups. We focus on chest radiograph datasets and highlight the necessity of fairness in medical AI, especially considering the significant implications bias can have on healthcare decisions. The motivation behind the work stems from well-documented cases of racial, gender, and socioeconomic disparities in the performance of AI models used for disease prediction. These biases can exacerbate existing healthcare inequities, particularly in underrepresented populations. Our goal is to mitigate these biases through preprocessing techniques to improve fairness in model outcomes.</p>
+<p>In this project, we present a novel approach to tackling the challenge of translating natural language into SQL queries using smaller language models. The motivation stems from the growing demand for large language models in tasks such as Text-to-SQL, where users can interact with databases using natural language. While large models like GPT-3 and T5 show promise, their training requires significant human effort and high computational costs, making them less accessible for many. To address this, the study proposes using smaller models and recursive distillation to reduce the need for human intervention and lower computational expenses.</p>
 <h2 id="approach">Approach</h2>
-<p>The approach employed in this project involves <strong>the use of Generalized Cross Entropy (GCE) Loss to identify biased data points within the dataset</strong>. By analyzing the loss associated with each data point, the paper introduces upsampling and downsampling strategies to correct biases. Upsampling involves increasing the representation of data points from subgroups with higher false positive rates (FPR), while downsampling removes data points that disproportionately benefit from lower FPR. These methods were applied to mitigate bias within the model’s training process, allowing for more equitable outcomes. Additionally, we compare the use of GCE Loss with Binary Cross-Entropy (BCE) Loss to evaluate the impact of different loss functions on bias mitigation.</p>
-<h2 id="experiments">Experiments</h2>
-<p>Experiments were conducted on the MIMIC-CXR dataset, which includes demographic attributes like race, gender, age, and insurance type. The project utilizes both GCE and BCE Loss across multiple subgroups to evaluate the effectiveness of upsampling and downsampling techniques. The performance of the models was evaluated using the Area Under the Curve (AUC) and FPR metrics. The experiments reveal that combining upsampling and downsampling strategies effectively reduces the FPR gap across subgroups. The results of these experiments were presented in tables to demonstrate the impact of bias mitigation across various sensitive attributes and the effectiveness of different sampling strategies.</p>
-<h2 id="results">Results</h2>
 <p>
 
 
@@ -651,81 +647,116 @@
 <figure  >
   <div class="flex justify-center	">
     <div class="w-100" ><img alt="Alt text" srcset="
-               /post/project5/result1_hu8757b2e1886f866e2e63d1287fbc3eba_401771_5748bfb0b55e6cd19d2642cdc9576d5c.webp 400w,
-               /post/project5/result1_hu8757b2e1886f866e2e63d1287fbc3eba_401771_5082649d2e366807003e22051d313569.webp 760w,
-               /post/project5/result1_hu8757b2e1886f866e2e63d1287fbc3eba_401771_1200x1200_fit_q80_h2_lanczos_3.webp 1200w"
-               src="/post/project5/result1_hu8757b2e1886f866e2e63d1287fbc3eba_401771_5748bfb0b55e6cd19d2642cdc9576d5c.webp"
+               /post/project6-copy/framework_hu15492869e20bb7c3bb8936276c214faf_372962_4bb08628485d6799f0567d897a73d8e9.webp 400w,
+               /post/project6-copy/framework_hu15492869e20bb7c3bb8936276c214faf_372962_872cfbd631d3023563967ea638976d8c.webp 760w,
+               /post/project6-copy/framework_hu15492869e20bb7c3bb8936276c214faf_372962_1200x1200_fit_q80_h2_lanczos_3.webp 1200w"
+               src="/post/project6-copy/framework_hu15492869e20bb7c3bb8936276c214faf_372962_4bb08628485d6799f0567d897a73d8e9.webp"
                width="760"
-               height="139"
-               loading="lazy" data-zoomable /></div>
-  </div></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img alt="Alt text" srcset="
-               /post/project5/result3_hu4d2af54c49de51484e315e7940e64a38_344793_c6d8797053b782c04eb2b2e4ab6ded0b.webp 400w,
-               /post/project5/result3_hu4d2af54c49de51484e315e7940e64a38_344793_5c30ae7ff053f353d90f4d991028e54a.webp 760w,
-               /post/project5/result3_hu4d2af54c49de51484e315e7940e64a38_344793_1200x1200_fit_q80_h2_lanczos_3.webp 1200w"
-               src="/post/project5/result3_hu4d2af54c49de51484e315e7940e64a38_344793_c6d8797053b782c04eb2b2e4ab6ded0b.webp"
-               width="760"
-               height="388"
-               loading="lazy" data-zoomable /></div>
-  </div></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img alt="Alt text" srcset="
-               /post/project5/result2_hudbf5b08b0076735691aa505fd0f3cc70_238242_9973486570484a14e93ab552547f52d4.webp 400w,
-               /post/project5/result2_hudbf5b08b0076735691aa505fd0f3cc70_238242_3627441d9be4b09c2e16335fb785cd10.webp 760w,
-               /post/project5/result2_hudbf5b08b0076735691aa505fd0f3cc70_238242_1200x1200_fit_q80_h2_lanczos_3.webp 1200w"
-               src="/post/project5/result2_hudbf5b08b0076735691aa505fd0f3cc70_238242_9973486570484a14e93ab552547f52d4.webp"
-               width="760"
-               height="186"
+               height="400"
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>The results indicate that <strong>applying a combination of 50% upsampling and downsampling using GCE Loss leads to a significant reduction in bias, as reflected by the narrowing of the FPR gap without a substantial decrease in AUC performance (Table 1 and Figure 1)</strong>. Moreover, we observed that <strong>targeting specific sensitive attributes, such as age, proved to be particularly effective in reducing bias (Table 2)</strong>. In conclusion, the project provides a promising approach for mitigating bias in medical image datasets, although we note some limitations, including the need for further exploration of additional datasets, loss functions, and validation techniques to ensure the generalizability of our approach.</p>
+<p>The proposed approach relies on a three-step framework designed to automate the training process. First, the model generates multiple question-answer (QA) pairs based on few-shot prompts. In the second step, critic metrics are applied to filter out low-quality question-answer pairs. Finally, the filtered data is used to fine-tune the small language model, which is then iteratively refined through recursive distillation. The primary model used is Incoder-1B, though the framework allows flexibility to incorporate any model pretrained on code. This recursive learning approach helps the model self-learn to improve performance in generating SQL queries without requiring large-scale, human-annotated datasets.</p>
+<h2 id="experiments">Experiments</h2>
+<p>In the experimental section, we apply their framework using the SPIDER dataset, which contains over 5,000 unique SQL queries across multiple databases. Execution accuracy and test-suite accuracy are used as the main critic metrics to evaluate the quality of the generated SQL queries. The process involved generating SQL queries for a set of natural language questions, and those that did not meet the thresholds were filtered out. This method showed that even small language models could achieve a high level of performance in Text-to-SQL tasks when trained effectively using recursive distillation.</p>
+<h2 id="examples">Examples</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img alt="Alt text" srcset="
+               /post/project6-copy/example1_hue8bcc111d2df2ee66c6034c671b59dcf_500534_3655291000d48dbde7eec5d0e8678280.webp 400w,
+               /post/project6-copy/example1_hue8bcc111d2df2ee66c6034c671b59dcf_500534_04555b9605d06ac6539d28ad97841bb7.webp 760w,
+               /post/project6-copy/example1_hue8bcc111d2df2ee66c6034c671b59dcf_500534_1200x1200_fit_q80_h2_lanczos_3.webp 1200w"
+               src="/post/project6-copy/example1_hue8bcc111d2df2ee66c6034c671b59dcf_500534_3655291000d48dbde7eec5d0e8678280.webp"
+               width="760"
+               height="392"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p><strong>The first use case illustrates the construction of a few-shot prompt template based on a given database schema and associated natural language questions (Figure 1)</strong>. This standardized prompt helps to ensure consistent quality in the candidate question-answer pairs generated by the model. The authors show that by providing the model with the database schema and a few examples of questions and SQL queries, the small language model can effectively generate SQL queries for new questions.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img alt="Alt text" srcset="
+               /post/project6-copy/example2_hu9f9da14187bb081a064f88202f56e796_667172_e3e44f0f07efaf91e9fa851de4ca0244.webp 400w,
+               /post/project6-copy/example2_hu9f9da14187bb081a064f88202f56e796_667172_ca6d146aa97aa78502c6b5c3bc691d38.webp 760w,
+               /post/project6-copy/example2_hu9f9da14187bb081a064f88202f56e796_667172_1200x1200_fit_q80_h2_lanczos_3.webp 1200w"
+               src="/post/project6-copy/example2_hu9f9da14187bb081a064f88202f56e796_667172_e3e44f0f07efaf91e9fa851de4ca0244.webp"
+               width="760"
+               height="286"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p><strong>The second use case highlights the use of critic metrics—execution accuracy and test-suite accuracy—to filter out low-quality SQL queries (Figure 2)</strong>. After generating multiple candidate question-answer pairs from the prompts, the system applies these metrics to discard incorrect or non-executable SQL queries. This filtering ensures that only high-quality data is used to fine-tune the small language model in subsequent iterations.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img alt="Alt text" srcset="
+               /post/project6-copy/example3_huce0fe93dd7006f2d60e1d216e8f62809_318738_c03e286dfed89c5cae37f32c74f90552.webp 400w,
+               /post/project6-copy/example3_huce0fe93dd7006f2d60e1d216e8f62809_318738_793a634ea9da9f08aa02f9626d9ee3f6.webp 760w,
+               /post/project6-copy/example3_huce0fe93dd7006f2d60e1d216e8f62809_318738_1200x1200_fit_q80_h2_lanczos_3.webp 1200w"
+               src="/post/project6-copy/example3_huce0fe93dd7006f2d60e1d216e8f62809_318738_c03e286dfed89c5cae37f32c74f90552.webp"
+               width="760"
+               height="267"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p><strong>The third use case demonstrates how the recursive distillation process works for improving the Text-to-SQL performance of a small language model like Incoder-1B (Figure 3)</strong>.</p>
+<p>Overall, the use cases demonstrate the practical application of the framework in reducing human involvement in training and enhancing the performance of small language models on Text-to-SQL tasks. The process of recursive distillation, combined with critic metrics, allows the model to iteratively improve its SQL generation capabilities in an automated manner.</p>
 <h2 id="resource">Resource</h2>
-<p>To review the paper and know more details about the project, welcome to visit my <a href="https://github.com/wangjohn5507/Debias-medical-images" target="_blank" rel="noopener">Github</a>. Due to dataset access restrictions, we are unable to publicly share the dataset used in our experiments.</p>
+<p>To review the paper and know more details about the project, welcome to visit my <a href="https://github.com/wangjohn5507/Distillation-with-small-LM" target="_blank" rel="noopener">Github</a>.</p>
 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-04-20T00:00:00.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2023-12-08T00:00:00.000Z">
     <span>Last updated on</span>
-    Apr 20, 2024</time>
+    Dec 8, 2023</time>
 
       <div class="container mx-auto prose prose-slate lg:prose-xl dark:prose-invert mt-5">
         
@@ -753,7 +784,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject5%2F&amp;text=Bias&#43;Mitigation&#43;for&#43;Medical&#43;Images"
+    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject6-copy%2F&amp;text=Distillation&#43;with&#43;Small&#43;Language&#43;Model"
     title="X"
     aria-label="X"
     id="share-link-x"
@@ -771,7 +802,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject5%2F&amp;t=Bias&#43;Mitigation&#43;for&#43;Medical&#43;Images"
+    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject6-copy%2F&amp;t=Distillation&#43;with&#43;Small&#43;Language&#43;Model"
     title="Facebook"
     aria-label="Facebook"
     id="share-link-facebook"
@@ -791,7 +822,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="mailto:?subject=Bias%20Mitigation%20for%20Medical%20Images&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject5%2F"
+    href="mailto:?subject=Distillation%20with%20Small%20Language%20Model&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject6-copy%2F"
     title="Email"
     aria-label="Email"
     id="share-link-email"
@@ -809,7 +840,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject5%2F&amp;title=Bias&#43;Mitigation&#43;for&#43;Medical&#43;Images"
+    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject6-copy%2F&amp;title=Distillation&#43;with&#43;Small&#43;Language&#43;Model"
     title="LinkedIn"
     aria-label="LinkedIn"
     id="share-link-linkedin"
@@ -827,7 +858,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="whatsapp://send?text=Bias&#43;Mitigation&#43;for&#43;Medical&#43;Images%20http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject5%2F"
+    href="whatsapp://send?text=Distillation&#43;with&#43;Small&#43;Language&#43;Model%20http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject6-copy%2F"
     title="WhatsApp"
     aria-label="WhatsApp"
     id="share-link-whatsapp"
@@ -975,17 +1006,17 @@
   <div class="flex flex-col md:flex-row flex-nowrap justify-between gap-5 pt-2">
     <div class="">
       
-        <a class="group flex no-underline" href="/post/project4/">
+        <a class="group flex no-underline" href="/post/project5/">
           <span
             class="mt-[-0.3rem] me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
           ><span class="ltr:inline rtl:hidden">&larr;</span></span>
           <span class="flex flex-col">
             <span
               class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >Fairness Algorithm Design</span>
+            >Bias Mitigation for Medical Images</span>
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               
-                Apr 27, 2024
+                Apr 20, 2024
               
             </span>
           </span>

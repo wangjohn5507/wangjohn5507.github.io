@@ -41,10 +41,10 @@
   
     
   
-  <meta name="description" content="Proposed data preprocessing techniques to mitigate the bias in the medical dataset." />
+  <meta name="description" content="Generate questions by retrieving documents using Retrieval-augmented Generation (RAG)." />
 
   
-  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/post/project5/" />
+  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/post/project7/" />
 
   
   
@@ -156,7 +156,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu9dfd98774236d285c9d9c97365ecb238_49697_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu9dfd98774236d285c9d9c97365ecb238_49697_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="http://localhost:1313/post/project5/" />
+  <link rel="canonical" href="http://localhost:1313/post/project7/" />
 
   
   
@@ -178,18 +178,18 @@
   <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="Chung-Yu Wang" />
-  <meta property="og:url" content="http://localhost:1313/post/project5/" />
-  <meta property="og:title" content="Bias Mitigation for Medical Images | Chung-Yu Wang" />
-  <meta property="og:description" content="Proposed data preprocessing techniques to mitigate the bias in the medical dataset." /><meta property="og:image" content="http://localhost:1313/post/project5/featured.png" />
-    <meta property="twitter:image" content="http://localhost:1313/post/project5/featured.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:url" content="http://localhost:1313/post/project7/" />
+  <meta property="og:title" content="Question-Answering with RAG | Chung-Yu Wang" />
+  <meta property="og:description" content="Generate questions by retrieving documents using Retrieval-augmented Generation (RAG)." /><meta property="og:image" content="http://localhost:1313/post/project7/featured.png" />
+    <meta property="twitter:image" content="http://localhost:1313/post/project7/featured.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2024-04-20T00:00:00&#43;00:00"
+        content="2025-04-18T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2024-04-20T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2025-04-18T00:00:00&#43;00:00">
   
 
   
@@ -199,7 +199,7 @@
   
 
 
-  <title>Bias Mitigation for Medical Images | Chung-Yu Wang</title>
+  <title>Question-Answering with RAG | Chung-Yu Wang</title>
 
   
   
@@ -439,28 +439,12 @@
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
         </span>
     </a><div class="ltr:pr-0 overflow-hidden">
-        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
     class="hb-sidebar-custom-link
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
     href="/post/project7/"
     
   >Question-Answering with RAG
-    </a>
-              
-            </li><li class="flex flex-col "><a
-    class="hb-sidebar-custom-link
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
-    href="/post/project4/"
-    
-  >Fairness Algorithm Design
-    </a>
-              
-            </li><li class="flex flex-col open"><a
-    class="hb-sidebar-custom-link
-      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
-    href="/post/project5/"
-    
-  >Bias Mitigation for Medical Images
     </a>
   
     <ul class="hb-sidebar-mobile-toc"><li>
@@ -477,15 +461,9 @@
             </li>
           <li>
               <a
-                href="#experiments"
+                href="#examples"
                 class="hb-docs-link"
-              >Experiments</a>
-            </li>
-          <li>
-              <a
-                href="#results"
-                class="hb-docs-link"
-              >Results</a>
+              >Examples</a>
             </li>
           <li>
               <a
@@ -495,6 +473,22 @@
             </li>
           </ul>
   
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/project4/"
+    
+  >Fairness Algorithm Design
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/post/project5/"
+    
+  >Bias Mitigation for Medical Images
+    </a>
               
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
@@ -558,10 +552,7 @@
         <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#approach">Approach</a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#experiments">Experiments</a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#results">Results</a>
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#examples">Examples</a>
       </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
         <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#resource">Resource</a>
@@ -587,9 +578,9 @@
 
       
 
-      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Bias Mitigation for Medical Images</h1>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Question-Answering with RAG</h1>
 
-      <div class="mt-4 mb-16 text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Apr 20, 2024</span>
+      <div class="mt-4 mb-16 text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Apr 18, 2025</span>
         
 
         
@@ -616,9 +607,9 @@
       
       
       
-      <div class="article-header article-container featured-image-wrapper mt-4 mb-16" style="max-width: 720px; max-height: 508px;">
+      <div class="article-header article-container featured-image-wrapper mt-4 mb-16" style="max-width: 720px; max-height: 259px;">
         <div style="position: relative">
-          <img src="/post/project5/featured_hu27b3007bd35cef6a3a272de13813a8be_245796_1551c526405e4d7351ea4d79df322872.webp" width="720" height="508" alt="" class="featured-image">
+          <img src="/post/project7/featured_hu52bba74e43afda7b7ce0d8fe7a7e4fa2_81958_baf8ff5dbc7aacb7e104918b34365612.webp" width="720" height="259" alt="" class="featured-image">
           
         </div>
       </div>
@@ -626,12 +617,10 @@
 
       <div class="prose prose-slate lg:prose-xl dark:prose-invert">
         <h2 id="motivation">Motivation</h2>
-<p>In this project, we investigate how bias in machine learning models, particularly those used in medical image analysis, can lead to unfair outcomes across various demographic subgroups. We focus on chest radiograph datasets and highlight the necessity of fairness in medical AI, especially considering the significant implications bias can have on healthcare decisions. The motivation behind the work stems from well-documented cases of racial, gender, and socioeconomic disparities in the performance of AI models used for disease prediction. These biases can exacerbate existing healthcare inequities, particularly in underrepresented populations. Our goal is to mitigate these biases through preprocessing techniques to improve fairness in model outcomes.</p>
+<p>The motivation behind this project stems from my desire to offer a more engaging and personalized way for visitors to learn about me beyond a static resume or bio. By integrating a custom AI assistant into my personal website, powered by Retrieval-Augmented Generation (RAG) and my own documents, I aim to create an interactive experience where users can ask questions and receive accurate, conversational answers about my background, skills, and experiences. This not only demonstrates my technical capabilities in building full-stack AI applications, but also reflects my passion for creating intuitive, human-centered technology.</p>
 <h2 id="approach">Approach</h2>
-<p>The approach employed in this project involves <strong>the use of Generalized Cross Entropy (GCE) Loss to identify biased data points within the dataset</strong>. By analyzing the loss associated with each data point, the paper introduces upsampling and downsampling strategies to correct biases. Upsampling involves increasing the representation of data points from subgroups with higher false positive rates (FPR), while downsampling removes data points that disproportionately benefit from lower FPR. These methods were applied to mitigate bias within the model’s training process, allowing for more equitable outcomes. Additionally, we compare the use of GCE Loss with Binary Cross-Entropy (BCE) Loss to evaluate the impact of different loss functions on bias mitigation.</p>
-<h2 id="experiments">Experiments</h2>
-<p>Experiments were conducted on the MIMIC-CXR dataset, which includes demographic attributes like race, gender, age, and insurance type. The project utilizes both GCE and BCE Loss across multiple subgroups to evaluate the effectiveness of upsampling and downsampling techniques. The performance of the models was evaluated using the Area Under the Curve (AUC) and FPR metrics. The experiments reveal that combining upsampling and downsampling strategies effectively reduces the FPR gap across subgroups. The results of these experiments were presented in tables to demonstrate the impact of bias mitigation across various sensitive attributes and the effectiveness of different sampling strategies.</p>
-<h2 id="results">Results</h2>
+<p>This project leverages a Retrieval-Augmented Generation (RAG) approach, combining the power of OpenAI’s GPT-3.5 language model with Langchain and Pinecone for document retrieval. First, my personal documents—such as my resume—are indexed using embedding-based vector search. When a user submits a question, the system first evaluates its relevance, then reformulates it if necessary to a standalone version using a rephrasing prompt. Relevant document chunks are then retrieved from the vector store and passed along with the user’s question to the language model, which generates a contextualized, conversational response. It is worth noting that the system also integrates memory, allowing it to retain the chat history between the user and the chatbot. This conversational context is used as a reference for the language model, enabling it to generate more accurate and contextually relevant responses based on the user’s previous questions. This memory mechanism enhances the overall coherence and continuity of the interaction, creating a more natural and personalized user experience. The entire pipeline is orchestrated using LangGraph, and deployed as a full-stack application with a FastAPI backend and a clean Next.js frontend.</p>
+<h2 id="examples">Examples</h2>
 <p>
 
 
@@ -651,81 +640,25 @@
 <figure  >
   <div class="flex justify-center	">
     <div class="w-100" ><img alt="Alt text" srcset="
-               /post/project5/result1_hu8757b2e1886f866e2e63d1287fbc3eba_401771_5748bfb0b55e6cd19d2642cdc9576d5c.webp 400w,
-               /post/project5/result1_hu8757b2e1886f866e2e63d1287fbc3eba_401771_5082649d2e366807003e22051d313569.webp 760w,
-               /post/project5/result1_hu8757b2e1886f866e2e63d1287fbc3eba_401771_1200x1200_fit_q80_h2_lanczos_3.webp 1200w"
-               src="/post/project5/result1_hu8757b2e1886f866e2e63d1287fbc3eba_401771_5748bfb0b55e6cd19d2642cdc9576d5c.webp"
+               /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_00124cb8d59a0fc6899a8950a68dea5c.webp 400w,
+               /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_98f1fc5a335fb1844826e17706dd94d8.webp 760w,
+               /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_1200x1200_fit_q80_h2_lanczos_3.webp 1200w"
+               src="/post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_00124cb8d59a0fc6899a8950a68dea5c.webp"
                width="760"
-               height="139"
-               loading="lazy" data-zoomable /></div>
-  </div></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img alt="Alt text" srcset="
-               /post/project5/result3_hu4d2af54c49de51484e315e7940e64a38_344793_c6d8797053b782c04eb2b2e4ab6ded0b.webp 400w,
-               /post/project5/result3_hu4d2af54c49de51484e315e7940e64a38_344793_5c30ae7ff053f353d90f4d991028e54a.webp 760w,
-               /post/project5/result3_hu4d2af54c49de51484e315e7940e64a38_344793_1200x1200_fit_q80_h2_lanczos_3.webp 1200w"
-               src="/post/project5/result3_hu4d2af54c49de51484e315e7940e64a38_344793_c6d8797053b782c04eb2b2e4ab6ded0b.webp"
-               width="760"
-               height="388"
-               loading="lazy" data-zoomable /></div>
-  </div></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img alt="Alt text" srcset="
-               /post/project5/result2_hudbf5b08b0076735691aa505fd0f3cc70_238242_9973486570484a14e93ab552547f52d4.webp 400w,
-               /post/project5/result2_hudbf5b08b0076735691aa505fd0f3cc70_238242_3627441d9be4b09c2e16335fb785cd10.webp 760w,
-               /post/project5/result2_hudbf5b08b0076735691aa505fd0f3cc70_238242_1200x1200_fit_q80_h2_lanczos_3.webp 1200w"
-               src="/post/project5/result2_hudbf5b08b0076735691aa505fd0f3cc70_238242_9973486570484a14e93ab552547f52d4.webp"
-               width="760"
-               height="186"
+               height="350"
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>The results indicate that <strong>applying a combination of 50% upsampling and downsampling using GCE Loss leads to a significant reduction in bias, as reflected by the narrowing of the FPR gap without a substantial decrease in AUC performance (Table 1 and Figure 1)</strong>. Moreover, we observed that <strong>targeting specific sensitive attributes, such as age, proved to be particularly effective in reducing bias (Table 2)</strong>. In conclusion, the project provides a promising approach for mitigating bias in medical image datasets, although we note some limitations, including the need for further exploration of additional datasets, loss functions, and validation techniques to ensure the generalizability of our approach.</p>
+<p>The first use case illustrates the process initiated when a user submits a question—the chatbot begins by retrieving relevant documents and generating a response. The second use case demonstrates the chatbot&rsquo;s ability to produce a coherent and informative answer based on the retrieved content. The third use case highlights the system’s transparency, as it provides clickable references to the source documents used during the retrieval process, allowing users to explore the original context behind the response. The final use case showcases an additional layer of filtering implemented before answer generation. If a question is deemed unrelated or irrelevant to my background or expertise, it is intercepted and not forwarded to the language model. This ensures that the chatbot remains focused, avoids off-topic responses, and maintains alignment with the purpose of the assistant—providing accurate and meaningful insights about me.</p>
 <h2 id="resource">Resource</h2>
-<p>To review the paper and know more details about the project, welcome to visit my <a href="https://github.com/wangjohn5507/Debias-medical-images" target="_blank" rel="noopener">Github</a>. Due to dataset access restrictions, we are unable to publicly share the dataset used in our experiments.</p>
+<p>To review the paper and know more details about the project, welcome to visit my <a href="https://github.com/wangjohn5507/insightme" target="_blank" rel="noopener">Github</a>.</p>
 
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2024-04-20T00:00:00.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-04-18T00:00:00.000Z">
     <span>Last updated on</span>
-    Apr 20, 2024</time>
+    Apr 18, 2025</time>
 
       <div class="container mx-auto prose prose-slate lg:prose-xl dark:prose-invert mt-5">
         
@@ -753,7 +686,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject5%2F&amp;text=Bias&#43;Mitigation&#43;for&#43;Medical&#43;Images"
+    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject7%2F&amp;text=Question-Answering&#43;with&#43;RAG"
     title="X"
     aria-label="X"
     id="share-link-x"
@@ -771,7 +704,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject5%2F&amp;t=Bias&#43;Mitigation&#43;for&#43;Medical&#43;Images"
+    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject7%2F&amp;t=Question-Answering&#43;with&#43;RAG"
     title="Facebook"
     aria-label="Facebook"
     id="share-link-facebook"
@@ -791,7 +724,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="mailto:?subject=Bias%20Mitigation%20for%20Medical%20Images&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject5%2F"
+    href="mailto:?subject=Question-Answering%20with%20RAG&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject7%2F"
     title="Email"
     aria-label="Email"
     id="share-link-email"
@@ -809,7 +742,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject5%2F&amp;title=Bias&#43;Mitigation&#43;for&#43;Medical&#43;Images"
+    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject7%2F&amp;title=Question-Answering&#43;with&#43;RAG"
     title="LinkedIn"
     aria-label="LinkedIn"
     id="share-link-linkedin"
@@ -827,7 +760,7 @@
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="whatsapp://send?text=Bias&#43;Mitigation&#43;for&#43;Medical&#43;Images%20http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject5%2F"
+    href="whatsapp://send?text=Question-Answering&#43;with&#43;RAG%20http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fproject7%2F"
     title="WhatsApp"
     aria-label="WhatsApp"
     id="share-link-whatsapp"
@@ -975,34 +908,18 @@
   <div class="flex flex-col md:flex-row flex-nowrap justify-between gap-5 pt-2">
     <div class="">
       
-        <a class="group flex no-underline" href="/post/project4/">
-          <span
-            class="mt-[-0.3rem] me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
-          ><span class="ltr:inline rtl:hidden">&larr;</span></span>
-          <span class="flex flex-col">
-            <span
-              class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >Fairness Algorithm Design</span>
-            <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-              
-                Apr 27, 2024
-              
-            </span>
-          </span>
-        </a>
-      
     </div>
     <div class="">
       
-        <a class="group flex text-right no-underline" href="/post/project6/">
+        <a class="group flex text-right no-underline" href="/post/project4/">
           <span class="flex flex-col">
             <span
               class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >Distillation with Small Language Model</span
+            >Fairness Algorithm Design</span
             >
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               
-                Dec 8, 2023
+                Apr 27, 2024
               
             </span>
           </span>
