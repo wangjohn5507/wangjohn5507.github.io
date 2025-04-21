@@ -37,7 +37,7 @@ slides:
 ---
 ## Motivation
 
-Continuing previous [research](../../publication/conference-paper/), this project is my graduation project, which used Machine Learning techniques to solve the agricultural workforce scarcity problem that severly affects Taiwan's agriculture industry. My group member and I discovered that the advancement in cities provides more job opportunities and higher salaries that attract young people to move from the countryside to cities. As a result, agricultural labour has gradually decreased in recent years, posing a massive crisis to Taiwan's agricultural industry. Therefore, we focused on the issue of labour shortages when classifying date grades in the harvest season.
+Continuing previous [research](../../publication/conference-paper/) ([Paper published in TAAI'21](./conference-paper.pdf)), this project is my graduation project, which used Machine Learning techniques to solve the agricultural workforce scarcity problem that severly affects Taiwan's agriculture industry. My group member and I discovered that the advancement in cities provides more job opportunities and higher salaries that attract young people to move from the countryside to cities. As a result, agricultural labour has gradually decreased in recent years, posing a massive crisis to Taiwan's agricultural industry. Therefore, we focused on the issue of labour shortages when classifying date grades in the harvest season.
 
 ## Approach
 

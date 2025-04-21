@@ -41,10 +41,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Alt text&#34; srcset=&#34;
-               /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_1fc5c4e28a65f04ff4cbbd9f6dde0aef.webp 400w,
+               /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_1a0055b993ae1e27ff4ece0db58ff8c2.webp 400w,
                /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_76affd70ab7105bfb21777856468a413.webp 760w,
                /post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_1fc5c4e28a65f04ff4cbbd9f6dde0aef.webp&#34;
+               src=&#34;http://localhost:1313/post/project7/example1_hu0b2f9ca58ab32334e6d040e915606a25_1538618_1a0055b993ae1e27ff4ece0db58ff8c2.webp&#34;
                width=&#34;760&#34;
                height=&#34;350&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -52,7 +52,7 @@
 &lt;/p&gt;
 &lt;p&gt;The first use case illustrates the process initiated when a user submits a question—the chatbot begins by retrieving relevant documents and generating a response. The second use case demonstrates the chatbot&amp;rsquo;s ability to produce a coherent and informative answer based on the retrieved content. The third use case highlights the system’s transparency, as it provides clickable references to the source documents used during the retrieval process, allowing users to explore the original context behind the response. The final use case showcases an additional layer of filtering implemented before answer generation. If a question is deemed unrelated or irrelevant to my background or expertise, it is intercepted and not forwarded to the language model. This ensures that the chatbot remains focused, avoids off-topic responses, and maintains alignment with the purpose of the assistant—providing accurate and meaningful insights about me.&lt;/p&gt;
 &lt;h2 id=&#34;resource&#34;&gt;Resource&lt;/h2&gt;
-&lt;p&gt;To review the paper and know more details about the project, welcome to visit my &lt;a href=&#34;https://github.com/wangjohn5507/insightme&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To review the project, welcome to visit my &lt;a href=&#34;https://github.com/wangjohn5507/insightme&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -374,7 +374,7 @@
       <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/project3/</guid>
       <description>&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
-&lt;p&gt;Continuing previous &lt;a href=&#34;../../publication/conference-paper/&#34;&gt;research&lt;/a&gt;, this project is my graduation project, which used Machine Learning techniques to solve the agricultural workforce scarcity problem that severly affects Taiwan&amp;rsquo;s agriculture industry. My group member and I discovered that the advancement in cities provides more job opportunities and higher salaries that attract young people to move from the countryside to cities. As a result, agricultural labour has gradually decreased in recent years, posing a massive crisis to Taiwan&amp;rsquo;s agricultural industry. Therefore, we focused on the issue of labour shortages when classifying date grades in the harvest season.&lt;/p&gt;
+&lt;p&gt;Continuing previous &lt;a href=&#34;../../publication/conference-paper/&#34;&gt;research&lt;/a&gt; (&lt;a href=&#34;./conference-paper.pdf&#34;&gt;Paper published in TAAI&#39;21&lt;/a&gt;), this project is my graduation project, which used Machine Learning techniques to solve the agricultural workforce scarcity problem that severly affects Taiwan&amp;rsquo;s agriculture industry. My group member and I discovered that the advancement in cities provides more job opportunities and higher salaries that attract young people to move from the countryside to cities. As a result, agricultural labour has gradually decreased in recent years, posing a massive crisis to Taiwan&amp;rsquo;s agricultural industry. Therefore, we focused on the issue of labour shortages when classifying date grades in the harvest season.&lt;/p&gt;
 &lt;h2 id=&#34;approach&#34;&gt;Approach&lt;/h2&gt;
 &lt;p&gt;I successfully extracted dates and injured parts from images by training two layers of the YOLOv4 model. Then, I divided dates into different grades with the EfficientNet that was trained with multiple data such as injured area percentage and ingury cause weight.&lt;/p&gt;
 &lt;h2 id=&#34;deployment&#34;&gt;Deployment&lt;/h2&gt;
