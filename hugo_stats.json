@@ -1,6 +1,7 @@
 {
   "htmlElements": {
     "tags": [
+      "?xml",
       "a",
       "article",
       "aside",
@@ -373,6 +374,9 @@
     ],
     "ids": [
       "Layer_1",
+      "SVGRepo_bgCarrier",
+      "SVGRepo_iconCarrier",
+      "SVGRepo_tracerCarrier",
       "approach",
       "deployment",
       "example",

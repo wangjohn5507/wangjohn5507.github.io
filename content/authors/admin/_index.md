@@ -141,14 +141,14 @@ awards:
   - title: 'Task-oriented Prompt Enhancement via Script Generation'
     url: https://arxiv.org/abs/2409.16418
     date: '2024-04-26'
-    awarder: Arxiv (Under review)
-    icon: arxiv
+    awarder: 31st Conference on Knowledge Discovery and Data Mining Workshop (KDD'25 Workshop)
+    icon: Conf
     summary: |
       TITAN is a novel strategy designed to enhance large language models' (LLMs) performance on task-oriented prompts by using a universal, zero-shot approach. It eliminates the need for task-specific instructions and manual efforts by leveraging step-back and chain-of-thought prompting techniques to refine the code-generation process. In evaluations, TITAN outperforms existing zero-shot methods, achieving state-of-the-art performance in 8 out of 11 tasks, offering a significant improvement in handling everyday task-oriented prompts.
   - title: 'Can ChatGPT Support Developers? An Empirical Evaluation of Large Language Models for Code Generation'
     url: https://ieeexplore.ieee.org/abstract/document/10555687
     date: '2024-03-26'
-    awarder: 21st International Conference on Mining Software Repositories (MSR ’24)
+    awarder: 21st International Conference on Mining Software Repositories (MSR’24)
     icon: Conf
     summary: |
       Large language models (LLMs) have shown promise in code generation, but existing studies focus mainly on research settings, leaving gaps in understanding their real-world utility. An empirical analysis of developer conversations from the DevGPT dataset reveals that LLM-generated code is primarily used for demonstrating concepts or examples rather than as production-ready code. These findings highlight the need for further improvements before LLMs can play a significant role in modern software development.
