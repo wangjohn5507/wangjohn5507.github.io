@@ -49,7 +49,7 @@ education:
     date_end: 2025-04-30
     summary: |
       - Supervised by [Professor Hung Viet Pham](https://hvpham.github.io/)
-      - Published 1 conference paper (MSR 2024)
+      - Published 2 conference paper (MSR'24 & KDD'25 Workshop)
     # button:
     #   text: 'Read Thesis'
     #   url: 'https://example.com'
