@@ -138,6 +138,12 @@ awards:
     icon: arxiv
     summary: |
       PET-Select is a PET-agnostic model designed to improve the accuracy of code generation by selecting the most appropriate prompt engineering technique (PET) based on code complexity. It uses contrastive learning to distinguish between simple and complex queries, enabling more effective PET selection. Evaluations show PET-Select improves pass@1 accuracy by up to 1.9% and reduces token usage by 74.8%, optimizing the code generation process across benchmarks.
+  - title: 'Deep-Bench: Deep Learning Benchmark Dataset for Code Generation'
+    url: https://arxiv.org/abs/2502.18726
+    awarder: Arxiv (Under review)
+    icon: arxiv
+    summary: |
+      Deep-Bench is a new benchmark for function-level deep learning (DL) code generation, designed to cover the full DL pipeline across phases, tasks, and data types—unlike prior benchmarks like DS-1000, which focus narrowly on pre/post-processing. Leading LLMs such as GPT-4o achieve significantly lower accuracy on DeepBench (31% vs. 60% on DS-1000), highlighting its greater complexity. Our analysis reveals substantial performance variation across categories and common bugs in LLM-generated DL code, offering valuable insights into current limitations and future improvements.
   - title: 'Task-oriented Prompt Enhancement via Script Generation'
     url: https://arxiv.org/abs/2409.16418
     date: '2024-04-26'
