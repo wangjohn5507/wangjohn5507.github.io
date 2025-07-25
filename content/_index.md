@@ -47,12 +47,6 @@ sections:
       # Education or Experience section first?
       is_education_first: align
 
-  - block: awards
-    id: publications
-    content:
-      title: Publications
-      username: admin
-
   - block: collection
     id: projects
     content:
@@ -86,6 +80,12 @@ sections:
       # view: date-title-summary
       # fill_image: false
       # columns: 2
+
+  - block: awards
+    id: publications
+    content:
+      title: Publications
+      username: admin
   
 
   # - block: collection
